@@ -21,7 +21,7 @@ export async function GET() {
             },
 
             {
-                "name": "Mail",
+                "name": "Me contacter",
                 "icon": "octicon:mail-24",
                 "link": "mailto:fx.savary@orange.fr"
             }

@@ -2,7 +2,7 @@
 @import '../../../assets/sass/breakpoints.scss';
 
 header {
-    height: 4rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     background: linear-gradient(to bottom, $black, transparent);
@@ -12,11 +12,26 @@ header {
 
     .content {
         width: 100%;
-        max-width: 75rem;
-        padding: 0 2rem;
+        max-width: 60rem;
+        padding: 0 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .button-container {
+            width: 12rem;
+
+            .button {
+                background: none;
+                border: solid 1px $accent1;
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    header .content {
+        padding: 0 2rem;
     }
 }
 
