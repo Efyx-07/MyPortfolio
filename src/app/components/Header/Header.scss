@@ -1,0 +1,27 @@
+@import '../../../assets/sass/colors.scss';
+@import '../../../assets/sass/breakpoints.scss';
+
+header {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, $black, transparent);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    .content {
+        width: 100%;
+        max-width: 75rem;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: $xxl) {
+    header .content {
+        max-width: 90rem;
+    }
+}

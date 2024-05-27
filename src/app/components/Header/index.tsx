@@ -1,7 +1,11 @@
+import './Header.scss';
+
 export default function Header() {
     return (
         <header>
-            I am the Header
+            <div className="content">
+                I am the Header
+            </div>
         </header>
     )
 }
