@@ -1,0 +1,32 @@
+@import '../../../assets/sass/colors.scss';
+@import '../../../assets/sass/breakpoints.scss';
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 100%;
+
+    .image-container {
+        display: block;
+        width: 100%;
+        max-width: 20rem;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: inherit;
+
+        .img {
+            width: 100%;
+            height: auto;
+            border-radius: inherit;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .hero-image .image-container {
+        max-width: 22rem;
+        max-height: 22rem;
+    }
+}
