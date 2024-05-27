@@ -22,10 +22,3 @@
         gap: 4rem;
     }
 }
-
-@media (min-width: $xxl) {
-
-    .hero-card {
-        grid-template-columns: 1.5fr 1fr;
-    }
-}
