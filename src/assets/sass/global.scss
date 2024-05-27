@@ -1,0 +1,67 @@
+@import './colors.scss';
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Alumni';
+    src: url(../fonts/AlumniSans-VariableFont_wght.ttf);
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background: $black;
+    color: $white;
+
+    /* Customize the scrollbar color and width */
+    scrollbar-color: $accent1;
+    scrollbar-width: 12px;
+}
+
+body::-webkit-scrollbar {
+    width: .75rem;               
+}
+
+body::-webkit-scrollbar-track {
+    background: $black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $accent1;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px solid $black;  /* creates padding around scroll thumb */
+}
+
+body::-moz-scrollbar-track {
+    background: $black;
+}
+
+body::-moz-scrollbar-thumb {
+    background: $accent1;
+    border-radius: 100%;
+    border: 3px solid $black;
+}
+
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1, h3 {
+    font-family: 'Alumni', sans-serif;
+}
