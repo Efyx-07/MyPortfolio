@@ -1,6 +1,8 @@
 import Project from "@/app/types/projectType";
 import useProjects from "@/app/services/useProjects";
 import ProjectCard from "./ProjectCard";
+import '../../../assets/sass/sections-common-style.scss';
+import './ProjectSection.scss';
 
 export default function ProjectSection() {
 
