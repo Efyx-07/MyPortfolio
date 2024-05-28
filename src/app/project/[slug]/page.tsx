@@ -1,40 +1,44 @@
-"use client"
+import { Metadata } from 'next';
+import Project from '@/app/types/projectType';
+import { fetchProjects } from '@/app/services/fetchProjects';
 
-import { useParams } from "next/navigation";
-import { useState, useEffect } from "react";
-import Project from "@/app/types/projectType";
-import useProjects from "@/app/services/useProjects";
-import '../../../assets/sass/pages-common-style.scss';
+interface ProjectPageProps {
+  params: { slug: string };
+};
 
-export default function ProjectSlug() {
+async function fetchProjectBySlug(slug: string): Promise<Project | null> {
+    const projects: Project[] = await fetchProjects();
+    return projects.find((project: Project) => project.slug === slug) || null;
+};
 
-    const projects: Project[] = useProjects();
-    const { slug } = useParams();
-    const [selectedProject, setSelectedProject] = useState<Project | undefined>();
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+    const project: Project | null = await fetchProjectBySlug(params.slug);
+  return {
+    title: `Project | ${project?.title}`,
+    description: project?.description,
+  };
+};
 
-    useEffect(() => {
-        if (projects.length > 0 && slug) {
-            const foundProject = projects.find((project: Project) => project.slug === slug);
-            setSelectedProject(foundProject);
-        }
-    }, [projects, slug])
+export default async function ProjectPage({ params }: ProjectPageProps) {
 
-    return (
-        <>
-            <div className="page">
+  const project: Project | null = await fetchProjectBySlug(params.slug);
+
+  return (
+    <>
+        {project ? 
+            (
+                <div className="page">
                 <div className="content">
-                    {selectedProject ? 
-                        (
-                                <h1>{selectedProject.title}</h1>
-                        )
-                    :
-                        (
-                            <p>Loading...</p>
-                        )
-                    }
+                    <h2>{project.title}</h2>
+                    <p>{project.description}</p>
                 </div>
-            </div>
-        </>
-        
-    )
-}
+                </div>
+            )
+        :
+            (
+                <p>Project not found</p>
+            )
+        }
+    </>
+  );
+};
