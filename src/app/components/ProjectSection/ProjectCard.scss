@@ -3,10 +3,11 @@
 
 .project-card {
     width: 100%;
-    max-width: 28rem;
+    max-width: 27.5rem;
     background: $blackRelief;
     border: solid 1px rgba($white, .1);
     border-radius: .5rem;
+    flex: 0 0 100%;
 
     &:hover > .image-container .img {
         transform: translateY(calc(-100% + 15rem)); // fait défiler l'image, ajoute taille de projectImage-container
