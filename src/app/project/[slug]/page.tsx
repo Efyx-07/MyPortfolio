@@ -20,18 +20,21 @@ export default function ProjectSlug() {
     }, [projects, slug])
 
     return (
-        <div className="page">
-            <div className="content">
-                {selectedProject ? 
-                    (
-                        <h1>{selectedProject.title}</h1>
-                    )
-                :
-                    (
-                        <p>Loading...</p>
-                    )
-                }
+        <>
+            <div className="page">
+                <div className="content">
+                    {selectedProject ? 
+                        (
+                                <h1>{selectedProject.title}</h1>
+                        )
+                    :
+                        (
+                            <p>Loading...</p>
+                        )
+                    }
+                </div>
             </div>
-        </div>
+        </>
+        
     )
 }
