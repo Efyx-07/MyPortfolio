@@ -1,0 +1,21 @@
+@import '../../../assets/sass/colors.scss';
+@import '../../../assets/sass/breakpoints.scss';
+
+.project-card {
+    width: 100%;
+    max-width: 28rem;
+    min-height: 35rem;
+    background: $blackRelief;
+
+    .image-container {
+        width: 100%;
+        height: 15rem;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+
+        .img {
+            width: 100%;
+        }
+    }
+}

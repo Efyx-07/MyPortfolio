@@ -6,7 +6,7 @@ export default function HeroImage() {
         <div className="hero-image">
             <div className="image-container">
                 <Image 
-                className="img"
+                    className="img"
                     src='/images/decoration/fxsavarydev.jpg' 
                     layout="responsive"
                     width={500}
