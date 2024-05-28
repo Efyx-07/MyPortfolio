@@ -1,0 +1,9 @@
+.sectionTitle-container {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+
+    h2 {
+        white-space: nowrap;
+    }
+}
