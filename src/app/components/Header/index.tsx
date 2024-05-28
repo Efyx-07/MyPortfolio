@@ -1,6 +1,7 @@
 "use client"
 
 import Button from '../Reusables/Button';
+import SiteName from './SiteName';
 import useContacts from '@/app/services/useContacts';
 import Contact from '@/app/types/contactType';
 import './Header.scss';
@@ -12,7 +13,7 @@ export default function Header() {
     return (
         <header>
             <div className="content">
-                I am the Header
+                <SiteName />
                 <div className="button-container">
                     {contacts.map((contact, index) => (
                         index === 2 && 
