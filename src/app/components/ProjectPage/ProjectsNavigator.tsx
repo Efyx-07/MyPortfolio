@@ -38,9 +38,9 @@ export default function ProjectsNavigator({projects, project}: ProjectsNavigator
     }, [currentProject, projects]);
 
     return (
-        <section>
+        <section className="project-navigator">
             <div className="content">
-                <div className="projects-navigator">
+                <div className="projectItems-container">
                     {previousProject &&
                         <div className="projectItem-container prev">
                             <p className="project-item">Projet précèdent</p>
