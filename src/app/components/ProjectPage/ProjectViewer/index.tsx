@@ -32,7 +32,7 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
     }, [project])
 
     return (
-        <section>
+        <section className="projectViewer-section">
             <div className="content">
                 <div className="project-viewer">
                     <div className="image-legend-container">
