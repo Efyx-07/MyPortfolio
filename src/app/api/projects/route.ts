@@ -10,7 +10,7 @@ export async function GET() {
                 "title": "VibrLink",
                 "slug": "VibrLink_fanlink_generator",
                 "date": "2024-05",
-                "description": "Application de génération de fanlinks pour sorties musicales. Basée sur l'API spotify et réalisée en React.",
+                "description": "Application de génération de fanlinks pour toutes vos sorties musicales. Basée sur l'API Spotify et réalisée en React.",
                 "presentation": "VibrLink est une application de génération de fanlinks pour les sorties musicales. Basée sur l'API Spotify, elle permet de renseigner les liens de la sortie vers les autres plateformes (9 sont disponibles). La synchronisation des liens Deezer et YouTube est automatique (grâce à leurs Api respectives). Développée avec une base de données relationnelle en MySQL, un backend en Express, un frontend en React/Typescript et un design en Sass.",
                 "image": {
                     "source": "VibrLink/pr3_imPres.png",
@@ -69,7 +69,7 @@ export async function GET() {
                 "title": "OxyEvents Manager",
                 "slug": "OxyEvents_Manager",
                 "date": "2023-10",
-                "description": "Application de création et gestion d'évènements privés, développée sur mesure pour une agence de relations presse.",
+                "description": "Application de création et gestion d'évènements privés, développée sur mesure pour l'agence de relations presse Oxygen.",
                 "presentation": "Dans le cadre d'une mission pour l'agence de relations presse Oxygen, j'ai créé cet outil interne en collaboration avec son pôle évenementiel. Réalisé de la maquette au développement final, celui-ci a été développé avec une base de données relationnelle en MySQL, un backend en NodeJs/Express et un frontend en Vue 3/Typescript avec design en Sass.",
                 "image": {
                     "source": "EventsManager/pr1_imPres.png",
