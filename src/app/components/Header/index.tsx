@@ -2,7 +2,7 @@
 
 import Button from '../Reusables/Button';
 import SiteName from './SiteName';
-import useContacts from '@/app/services/useContacts';
+import useContacts from '@/app/hooks/useContacts';
 import Contact from '@/app/types/contactType';
 import './Header.scss';
 

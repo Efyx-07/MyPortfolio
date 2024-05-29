@@ -1,5 +1,5 @@
 import Project from "@/app/types/projectType";
-import useProjects from "@/app/services/useProjects";
+import useProjects from "@/app/hooks/useProjects";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "../Reusables/SectionTitle";
 import '../../../assets/sass/sections-common-style.scss';

@@ -1,6 +1,27 @@
 import { useState, useEffect } from 'react';
 import Contact from '../types/contactType';
+import { fetchContacts } from '../services/fetchContacts';
 
+export default function useContacts() {
+    const [contacts, setContacts] = useState<Contact[]>([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const contacts = await fetchContacts();
+                setContacts(contacts);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        
+        fetchData();
+    }, []);
+
+    return contacts;
+}
+
+/*
 export default function useContacts() {
     const [contacts, setContacts] = useState<Contact[]>([]);
 
@@ -33,3 +54,4 @@ export default function useContacts() {
 
     return contacts;
 }
+*/

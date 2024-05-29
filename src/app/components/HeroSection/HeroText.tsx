@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import useContacts from '@/app/services/useContacts';
+import useContacts from '@/app/hooks/useContacts';
 import Contact from '@/app/types/contactType';
 import Button from '../Reusables/Button';
 import './HeroText.scss';
