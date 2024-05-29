@@ -1,3 +1,5 @@
+// SSR rendered page 
+
 import { Metadata } from 'next';
 import Project from '@/app/types/projectType';
 import { fetchProjects } from '@/app/services/fetchProjects';
