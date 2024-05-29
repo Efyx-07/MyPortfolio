@@ -1,0 +1,19 @@
+
+.projects-navigator {
+    display: flex;
+    flex-direction: row;
+
+    .projectItem-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prev {
+        align-items: start;
+    }
+
+    .next {
+        align-items: end;
+    }
+}

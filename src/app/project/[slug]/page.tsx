@@ -5,6 +5,7 @@ import Project from '@/app/types/projectType';
 import { fetchProjects } from '@/app/services/fetchProjects';
 import ProjectDescription from '@/app/components/ProjectPage/ProjectDescription';
 import ProjectViewer from '@/app/components/ProjectPage/ProjectViewer';
+import ProjectsNavigator from '@/app/components/ProjectPage/ProjectsNavigator';
 import '../../../assets/sass/pages-common-style.scss';
 
 interface ProjectPageProps {
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const project: Project | null = await fetchProjectBySlug(params.slug);
+  const projects: Project[] = await fetchProjects();
 
   return (
     <>
@@ -36,13 +38,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <div className="content">
                       <ProjectDescription project={project} />
                       <ProjectViewer project={project} />
+                      <ProjectsNavigator projects={projects} project={project}/>
                   </div>
                 </div>
-            )
-        :
-            (
-                <p>Project not found</p>
-            )
+            ) : <p>Project not found</p>
         }
     </>
   );
