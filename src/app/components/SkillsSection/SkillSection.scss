@@ -1,0 +1,16 @@
+@import '../../../assets/sass/breakpoints.scss';
+
+.skillCards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: $lg) {
+
+    .skillCards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
