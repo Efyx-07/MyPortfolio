@@ -16,8 +16,8 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
             <div className="content">
                 <div className="project-description">
                     <h2>{project.title}</h2>
-                    <Separator />
                     <p className="project-description">{project.description}</p>
+                    <Separator />
                     <div className="presentation-links-container">
                         <p className="presentation">{project.presentation}</p>
                         <div className="buttons-container">
