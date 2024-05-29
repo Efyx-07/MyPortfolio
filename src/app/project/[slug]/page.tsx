@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import Project from '@/app/types/projectType';
 import { fetchProjects } from '@/app/services/fetchProjects';
 import ProjectDescription from '@/app/components/ProjectPage/ProjectDescription';
+import ProjectViewer from '@/app/components/ProjectPage/ProjectViewer';
 import '../../../assets/sass/pages-common-style.scss';
 
 interface ProjectPageProps {
@@ -32,9 +33,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         {project ? 
             (
                 <div className="page">
-                <div className="content">
-                    <ProjectDescription project={project} />
-                </div>
+                  <div className="content">
+                      <ProjectDescription project={project} />
+                      <ProjectViewer project={project} />
+                  </div>
                 </div>
             )
         :
