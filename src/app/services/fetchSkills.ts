@@ -1,7 +1,7 @@
-import Project from '../types/projectType';
+import { Skill } from "../types/skillType";
 
-export async function fetchProjects(): Promise<Project[]> {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/projects`, {
+export async function fetchSkills(): Promise<Skill[]> {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/skills`, {
         headers: {
             Accept: "application/json",
             method: "GET",
@@ -14,9 +14,9 @@ export async function fetchProjects(): Promise<Project[]> {
 
     const data = await response.json();
 
-    if (!data.projects) {
+    if (!data.skills) {
         throw new Error('Not the expected format');
     }
 
-    return data.projects;
+    return data.skills;
 };
