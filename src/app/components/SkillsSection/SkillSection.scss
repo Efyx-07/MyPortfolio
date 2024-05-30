@@ -6,7 +6,15 @@
     gap: 1.5rem;
 }
 
-@media (min-width: $lg) {
+@media (min-width: $smInter) {
+
+    .skillCards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: $lgInter) {
 
     .skillCards-container {
         display: grid;
