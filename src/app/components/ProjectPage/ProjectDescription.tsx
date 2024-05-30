@@ -11,12 +11,14 @@ interface ProjectDescriptionProps {
 }
 
 export default function ProjectDescription({ project }: ProjectDescriptionProps) {
+    
     return (
         <section>
             <div className="content">
                 <div className="project-description">
                     <h2>{project.title}</h2>
                     <p className="project-description">{project.description}</p>
+                    <p>Type: {project.devType}</p> <p>Period: {project.date}</p>
                     <Separator />
                     <div className="presentation-links-container">
                         <p className="presentation">{project.presentation}</p>
