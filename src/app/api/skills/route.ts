@@ -33,7 +33,7 @@ export async function GET() {
             },
 
             { 
-              "title": "UX/UI: Sass, Figma, Adobe",
+              "title": "UI Design: Sass, Figma, Adobe",
               "icon": "hugeicons:paint-board",
               "stacks": [
                 {
