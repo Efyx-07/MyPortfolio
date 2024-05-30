@@ -11,9 +11,13 @@ export default interface Project {
     }
     devType: string;
     stack: string;
-    themes: string[];
+    themes: Theme[];
     buttons: Button[];
     views: View[];
+}
+
+interface Theme {
+    name: string;
 }
 
 interface Button {

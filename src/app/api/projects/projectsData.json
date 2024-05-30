@@ -14,7 +14,14 @@
             },
             "devType": "fullstack",
             "stack": "REACT, TYPESCRIPT, SASS, NODEJS, MYSQL",
-            "themes": ["Typescript", "React", "Sass", "NodeJs", "MySQL", "ext.API"],
+            "themes": [
+                {"name": "Typescript"},
+                {"name": "React"},
+                {"name": "Sass"},
+                {"name": "NodeJs"},
+                {"name": "MySQL"},
+                {"name": "API"}
+            ],
             "buttons": [
                 {
                     "name": "Demo",
@@ -74,7 +81,14 @@
             },
             "devType": "fullstack",
             "stack": "VUE, TYPESCRIPT, SASS, NODEJS, MYSQL",
-            "themes": ["Typescript", "Vue 3", "Sass", "NodeJs", "MySQL", "Nodemailer"],
+            "themes": [
+                {"name": "Typescript"},
+                {"name": "Vue 3"},
+                {"name": "Sass"},
+                {"name": "NodeJs"},
+                {"name": "MySQL"},
+                {"name": "Nodemailer"}
+            ],
             "buttons": [
                 {
                     "name": "Demo",
@@ -154,7 +168,14 @@
             },
             "devType": "fullstack",
             "stack": "VUE, TYPESCRIPT, SASS, NODEJS, MYSQL",
-            "themes": ["Typescript", "Vue 3", "Sass", "NodeJs", "MySQL", "E-commerce"],
+            "themes": [
+                {"name": "Typescript"},
+                {"name": "Vue 3"},
+                {"name": "Sass"},
+                {"name": "NodeJs"},
+                {"name": "MySQL"},
+                {"name": "E-commerce"}
+            ],
             "buttons": [
                 {
                     "name": "Demo",

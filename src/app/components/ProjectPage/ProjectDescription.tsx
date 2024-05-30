@@ -20,6 +20,11 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
                         <h2>{project.title}</h2>
                         <p className="project-detail">Développement {project.devType} | {project.date}</p>
                     </div>
+                    <div className="themes-container">
+                        {project.themes.map(theme => (
+                            <p className="theme" key={theme.name}>#{theme.name}</p>
+                        ))}
+                    </div>
                     <p className="project-description">{project.description}</p>
                     <Separator />
                     <div className="presentation-links-container">
