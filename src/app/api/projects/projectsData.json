@@ -14,6 +14,7 @@
             },
             "devType": "fullstack",
             "stack": "REACT, TYPESCRIPT, SASS, NODEJS, MYSQL",
+            "themes": ["Typescript", "React", "Sass", "NodeJs", "MySQL", "ext.API"],
             "buttons": [
                 {
                     "name": "Demo",
@@ -73,6 +74,7 @@
             },
             "devType": "fullstack",
             "stack": "VUE, TYPESCRIPT, SASS, NODEJS, MYSQL",
+            "themes": ["Typescript", "Vue 3", "Sass", "NodeJs", "MySQL", "Nodemailer"],
             "buttons": [
                 {
                     "name": "Demo",
@@ -152,6 +154,7 @@
             },
             "devType": "fullstack",
             "stack": "VUE, TYPESCRIPT, SASS, NODEJS, MYSQL",
+            "themes": ["Typescript", "Vue 3", "Sass", "NodeJs", "MySQL", "E-commerce"],
             "buttons": [
                 {
                     "name": "Demo",

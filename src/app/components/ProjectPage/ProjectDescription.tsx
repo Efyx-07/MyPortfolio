@@ -16,9 +16,11 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
         <section>
             <div className="content">
                 <div className="project-description">
-                    <h2>{project.title}</h2>
+                    <div className="title-detail-wrapper">
+                        <h2>{project.title}</h2>
+                        <p className="project-detail">Développement {project.devType} | {project.date}</p>
+                    </div>
                     <p className="project-description">{project.description}</p>
-                    <p>Type: {project.devType}</p> <p>Period: {project.date}</p>
                     <Separator />
                     <div className="presentation-links-container">
                         <p className="presentation">{project.presentation}</p>
