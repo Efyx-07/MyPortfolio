@@ -31,16 +31,6 @@
             }
         }
 
-        .hello {
-            width: 14rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: solid 1px rgba($white, .1);
-            border-radius: 3rem;
-            padding: .5rem;
-        }
-
         .textIcon-container {
             display: flex;
             align-items: center;
@@ -49,6 +39,16 @@
             .icon {
                 font-size: 1.5rem;
             }
+        }
+
+        .hello {
+            width: 14rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 1px rgba($white, .1);
+            border-radius: 3rem;
+            padding: .5rem;
         }
     }
 

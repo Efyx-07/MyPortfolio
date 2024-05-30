@@ -3,7 +3,7 @@
 
 .project-card {
     width: 100%;
-    max-width: 27.5rem;
+    max-width: 27rem;
     background: $blackRelief;
     border: solid 1px rgba($white, .05);
     border-radius: .5rem;
@@ -30,7 +30,7 @@
     }
 
     .project-description {
-        min-height: 19rem;
+        min-height: 18rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -51,6 +51,11 @@
             .title {
                 font-size: 1.5rem;
                 font-weight: 600;
+            }
+
+            .description {
+                font-size: .9rem;
+                opacity: .75;
             }
         }
     }
