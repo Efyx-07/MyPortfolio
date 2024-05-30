@@ -5,7 +5,7 @@ export async function GET() {
 
         skills: [
             { 
-              "title": "Langage",
+              "title": "Langage: TypeScript",
               "icon": "clarity:talk-bubbles-line",
               "stacks": [
                 {
@@ -13,11 +13,11 @@ export async function GET() {
                   "icon": "akar-icons:typescript-fill"
                 },
               ],
-              "text": "Typage des données avec TypeScript pour assurer leur cohérence et améliorer la maintenabilité du code tout au long du processus de développement."
+              "text": "J'utilise TypeScript pour assurer la cohérence des données tout au long du processus de développement et la maintenabilité du code."
             },
             
             { 
-              "title": "Frontend",
+              "title": "Frontend: Vue.js ou React",
               "icon": "gg:terminal",
               "stacks": [
                 {
@@ -29,11 +29,11 @@ export async function GET() {
                   "icon": "akar-icons:react-fill"
                 },
               ],
-              "text": "Spécialisé en Vue.js avec une expérience quotidienne de plus d'un an, je maîtrise également React et développe des applications réactives avec ces frameworks et leurs meta-frameworks, Nuxt et Next."
+              "text": "Je développe des applications réactives à l'aide de Vue.js ou React et leurs meta-frameworks, Nuxt et Next."
             },
 
             { 
-              "title": "UX / UI",
+              "title": "UX/UI: Sass, Figma, Adobe",
               "icon": "hugeicons:paint-board",
               "stacks": [
                 {
@@ -49,11 +49,11 @@ export async function GET() {
                   "icon": "streamline:adobe-solid"
                 }
               ],
-              "text": "Sass pour un design soigné et responsive des composants, maquettés à l'aide de Figma. Producteur audiovisuel pendant +5 ans, je maîtrise aussi la suite Adobe creative."
+              "text": "J'utilise Sass pour un design soigné et responsive d'interfaces maquettées avec Figma. Je maîtrise aussi la suite Adobe creative."
             },
 
             { 
-              "title": "Backend",
+              "title": "Backend: NodeJs/Express",
               "icon": "ph:database",
               "stacks": [
                 {
@@ -65,11 +65,11 @@ export async function GET() {
                   "icon": "simple-icons:express"
                 },
               ],
-              "text": "Capable de mettre en place un backend robuste en Node.js avec Express et de créer des API, je peux intervenir sur des projets fullstack et faciliter le dialogue avec les autres développeurs."
+              "text": "Capable de mettre en place un backend robuste et créer des API avec Node.js/Express, je peux intervenir sur des projets fullstack."
             },
 
             { 
-              "title": "Database",
+              "title": "Database: MySQL",
               "icon": "ph:cloud",
               "stacks": [
                 {
