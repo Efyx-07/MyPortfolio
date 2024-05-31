@@ -53,23 +53,23 @@
                     "id": "2",
                     "source": "VibrLink/pr3_view2.png",
                     "legend": {
-                        "title": "",
-                        "text":"Homepage, création de compte ou connexion sécurisée"
+                        "title": "Homepage",
+                        "text":"Création de compte ou connexion sécurisée, application multi-users."
                     }
                 },
                 {
                     "id": "3",
                     "source": "VibrLink/pr3_view3.png",
                     "legend": {
-                        "title": "",
-                        "text":"Création du fanlink basée sur l'Api Spotify. Fonctionne avec l'ID Spotify de votre sortie."
+                        "title": "Point d'entrée",
+                        "text":"Création du fanlink basée sur l'Api Spotify. Fonctionne avec le lien Spotify de la sortie selectionnée."
                     }
                 },
                 {
                     "id": "4",
                     "source": "VibrLink/pr3_view4.png",
                     "legend": {
-                        "title": "",
+                        "title": "Liste des fanlinks créés",
                         "text":"Liste des fanlinks de l'utilisateur connecté."
                     }
                 },
@@ -77,7 +77,7 @@
                     "id": "5",
                     "source": "VibrLink/pr3_view5.png",
                     "legend": {
-                        "title": "",
+                        "title": "Gestion des liens",
                         "text":"Edition des liens du fanlink. A partir de l'URL Spotify, auto-synchronisation des liens Deezer et YouTube(grâce à leurs Api respectives). Ajout manuel de liens vers d'autres plateformes. Visibilité des liens pilotée par un switch."
                     }
                 },
@@ -85,8 +85,8 @@
                     "id": "6",
                     "source": "VibrLink/pr3_view6.png",
                     "legend": {
-                        "title": "",
-                        "text":"Landing page du fanlink créé."
+                        "title": "Landing page",
+                        "text":"Landing page du fanlink créé, regroupant les liens vers les différentes plateformes de streaming, à partager sur les réseaux sociaux."
                     }
                 }
             ]
