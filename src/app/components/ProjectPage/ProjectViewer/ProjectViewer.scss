@@ -36,9 +36,19 @@
         .legend-container {
             height: 12rem;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 1rem;
             text-align: center;
+
+            .legend-title {
+                font-size: clamp(1.25rem, 4vw, 1.5rem);
+            }
+
+            .legend-text {
+                opacity: .75;
+            }
         }
     }
 }

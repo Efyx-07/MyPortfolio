@@ -47,7 +47,8 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
                             />
                         </div>
                         <div className="legend-container">
-                            <p>{project.views[currentViewIndex].legend}</p>
+                            <p className="legend-title">{project.views[currentViewIndex].legend.title}</p>
+                            <p className="legend-text">{project.views[currentViewIndex].legend.text}</p>
                         </div>
                     </div>
                     <ViewNavigator

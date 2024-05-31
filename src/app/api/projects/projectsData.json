@@ -6,8 +6,8 @@
             "title": "VibrLink",
             "slug": "VibrLink_fanlink_generator",
             "date": "avril 2024 - en cours",
-            "description": "Application de génération de fanlinks pour toutes vos sorties musicales. Basée sur l'API Spotify et réalisée en React.",
-            "presentation": "VibrLink est une application de génération de fanlinks pour les sorties musicales. Basée sur l'API Spotify, elle permet de renseigner les liens de la sortie vers les autres plateformes (9 sont disponibles). La synchronisation des liens Deezer et YouTube est automatique (grâce à leurs Api respectives). Développée avec une base de données relationnelle en MySQL, un backend en Express, un frontend en React/Typescript et un design en Sass.",
+            "description": "Application de génération de fanlinks pour toutes les sorties musicales. Basée sur l'API Spotify et réalisée en React.",
+            "presentation": "VibrLink est une application de génération de fanlinks pour les sorties musicales. Celle-ci permet de générer une landing-page regroupant tous les liens d'une sortie vers les différentes plateformes de streaming, outil promotionnel indispensable pour les artistes. Basée sur l'API Spotify, la synchronisation des liens Deezer et YouTube est automatisée, 9 plateformes sont actuellement disponibles.",
             "image": {
                 "source": "VibrLink/pr3_imPres.png",
                 "alt": "VibrLink"
@@ -44,32 +44,50 @@
                 {
                     "id": "1",
                     "source": "VibrLink/pr3_view1.png",
-                    "legend": "VibrLink - Fanlink generator"
+                    "legend": {
+                        "title": "VibrLink - Fanlink generator",
+                        "text":"VibrLink - Fanlink generator"
+                    }
                 },
                 {
                     "id": "2",
                     "source": "VibrLink/pr3_view2.png",
-                    "legend": "Homepage, création de compte ou connexion sécurisée"
+                    "legend": {
+                        "title": "",
+                        "text":"Homepage, création de compte ou connexion sécurisée"
+                    }
                 },
                 {
                     "id": "3",
                     "source": "VibrLink/pr3_view3.png",
-                    "legend": "Création du fanlink basée sur l'Api Spotify. Fonctionne avec l'ID Spotify de votre sortie."
+                    "legend": {
+                        "title": "",
+                        "text":"Création du fanlink basée sur l'Api Spotify. Fonctionne avec l'ID Spotify de votre sortie."
+                    }
                 },
                 {
                     "id": "4",
                     "source": "VibrLink/pr3_view4.png",
-                    "legend": "Liste des fanlinks de l'utilisateur connecté."
+                    "legend": {
+                        "title": "",
+                        "text":"Liste des fanlinks de l'utilisateur connecté."
+                    }
                 },
                 {
                     "id": "5",
                     "source": "VibrLink/pr3_view5.png",
-                    "legend": "Edition des liens du fanlink. A partir de l'URL Spotify, auto-synchronisation des liens Deezer et YouTube(grâce à leurs Api respectives). Ajout manuel de liens vers d'autres plateformes. Visibilité des liens pilotée par un switch."
+                    "legend": {
+                        "title": "",
+                        "text":"Edition des liens du fanlink. A partir de l'URL Spotify, auto-synchronisation des liens Deezer et YouTube(grâce à leurs Api respectives). Ajout manuel de liens vers d'autres plateformes. Visibilité des liens pilotée par un switch."
+                    }
                 },
                 {
                     "id": "6",
                     "source": "VibrLink/pr3_view6.png",
-                    "legend": "Landing page du fanlink créé."
+                    "legend": {
+                        "title": "",
+                        "text":"Landing page du fanlink créé."
+                    }
                 }
             ]
         },
@@ -117,52 +135,82 @@
                 {
                     "id": "1",
                     "source": "EventsManager/pr1_view1.png",
-                    "legend": "OxyEvents Manager"
+                    "legend": {
+                        "title": "OxyEvents Manager",
+                        "text":""
+                    }
                 },
                 {
                     "id": "2",
                     "source": "EventsManager/pr1_view2.png",
-                    "legend": "Connexion sécurisée au dashboard avec identifiant et mot de passe."
+                    "legend": {
+                        "title": "Connexion",
+                        "text":"Connexion sécurisée au dashboard avec identifiant et mot de passe. Option mot de passe oublié: envoi d'un lien de réinitialisation par mail avec Nodemailer."
+                    }
                 },
                 {
                     "id": "3",
                     "source": "EventsManager/pr1_view3.png",
-                    "legend": "Création d'évènements via un formulaire dédié et selon un template pré-défini (carte-évènement, sections, lieu lié à l'API Google Maps)."
+                    "legend": {
+                        "title": "Créer un évènement",
+                        "text":"Création d'évènements via un formulaire dédié et selon un template pré-défini (carte-évènement, sections, lieu lié à l'API Google Maps)."
+                    }
                 },
                 {
                     "id": "4",
                     "source": "EventsManager/pr1_view4.png",
-                    "legend": "Liste des évènements créés, filtrable par date ou par mot-clé. Accès aux différentes actions: mettre à jour ou supprimer un évènement, accéder à la page évènement, liste des participants."
+                    "legend": {
+                        "title": "Gestion des évènements",
+                        "text":"Liste des évènements créés, filtrable par date ou par mot-clé. Accès aux différentes actions: mettre à jour ou supprimer un évènement, accéder à la page évènement, liste des participants."
+                    }
                 },
                 {
                     "id": "5",
                     "source": "EventsManager/pr1_view5.png",
-                    "legend": "Mise à jour des informations de l'évènement via un formulaire dédié prérempli avec les données renseignées à l'origine."
+                    "legend": {
+                        "title": "Mettre à jour un évènement",
+                        "text":"Mise à jour des informations de l'évènement via un formulaire dédié prérempli avec les données renseignées à l'origine."
+                    }
                 },
                 {
                     "id": "6",
                     "source": "EventsManager/pr1_view6.png",
-                    "legend": "Landing page de l'évènement à envoyer aux invités. Son URL unique (id complexe avec UUID) permet d'en limiter l'accès aux invités selectionnés."
+                    "legend": {
+                        "title": "Landing page",
+                        "text":"Landing page de l'évènement à envoyer aux invités. Son URL unique (id complexe avec UUID) permet d'en limiter l'accès aux invités selectionnés."
+                    }
                 },
                 {
                     "id": "7",
                     "source": "EventsManager/pr1_view7.png",
-                    "legend": "Formulaire de confirmation de participation à l'évènement."
+                    "legend": {
+                        "title": "Participation à l'évènement",
+                        "text":"Formulaire de confirmation de participation à l'évènement à remplir par l'invité."
+                    }
                 },
                 {
                     "id": "8",
                     "source": "EventsManager/pr1_view8.png",
-                    "legend": " Liste des participants à un évènement avec leurs informations, mise à jour de manière réactive dans le dashboard. Export possible au format Excel (avec Excel.js)."
+                    "legend": {
+                        "title": "Récupération de la liste d'invités",
+                        "text":"Liste des participants à un évènement avec leurs informations, mise à jour de manière réactive dans le dashboard. Export possible au format Excel (avec Excel.js)."
+                    }
                 },
                 {
                     "id": "9",
                     "source": "EventsManager/pr1_view9.png",
-                    "legend": "Management de l'équipe administrateurs selon les rôles (Super Admin, Admin). Invitation nouvel admin par mail (avec Nodemailer et page de création de compte protégée par un token), modification mot de passe et suppression ancien administrateur."
+                    "legend": {
+                        "title": "Management des admins",
+                        "text":"Invitation nouvel admin par mail (avec Nodemailer et page de création de compte protégée par un token), modification mot de passe et suppression ancien administrateur."
+                    }
                 },
                 {
                     "id": "10",
                     "source": "EventsManager/pr1_view10.png",
-                    "legend": "Design en Sass entièrement responsive. Application accessible sur tous les supports."
+                    "legend": {
+                        "title": "Design responsive",
+                        "text":"Design en Sass entièrement responsive. Application accessible sur tous les supports."
+                    }
                 }
             ]
         },
@@ -210,32 +258,50 @@
                 {
                     "id": "1",
                     "source": "AmpliFury/pr2_view1.png",
-                    "legend": "AmpliFury MusicStore"
+                    "legend": {
+                        "title": "",
+                        "text":"AmpliFury MusicStore"
+                    }
                 },
                 {
                     "id": "2",
                     "source": "AmpliFury/pr2_view2.png",
-                    "legend": "Explorez les produits selon les catégories."
+                    "legend": {
+                        "title": "",
+                        "text":"Explorez les produits selon les catégories."
+                    }
                 },
                 {
                     "id": "3",
                     "source": "AmpliFury/pr2_view3.png",
-                    "legend": "Catalogue de produits filtrable selon le prix (ascendants, descendants) et l'ordre alphabétique (ascendant, descendant)."
+                    "legend": {
+                        "title": "",
+                        "text":"Catalogue de produits filtrable selon le prix (ascendants, descendants) et l'ordre alphabétique (ascendant, descendant)."
+                    }
                 },
                 {
                     "id": "4",
                     "source": "AmpliFury/pr2_view4.png",
-                    "legend": "Ajoutez les produits à votre liste de souhaits."
+                    "legend": {
+                        "title": "",
+                        "text":"Ajoutez les produits à votre liste de souhaits."
+                    }
                 },
                 {
                     "id": "5",
                     "source": "AmpliFury/pr2_view5.png",
-                    "legend": "Ajoutez les produits à votre panier d'achat."
+                    "legend": {
+                        "title": "",
+                        "text":"Ajoutez les produits à votre panier d'achat."
+                    }
                 },
                 {
                     "id": "6",
                     "source": "AmpliFury/pr2_view6.png",
-                    "legend": "Consultez les détails de chaque produit individuellement."
+                    "legend": {
+                        "title": "",
+                        "text":"Consultez les détails de chaque produit individuellement."
+                    }
                 }
             ]
         }

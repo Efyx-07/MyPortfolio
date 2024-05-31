@@ -33,5 +33,10 @@ interface Button {
 interface View {
     id: string;
     source: string;
-    legend: string;
+    legend: Legend;
+}
+
+interface Legend {
+    title: string;
+    text: string;
 }
