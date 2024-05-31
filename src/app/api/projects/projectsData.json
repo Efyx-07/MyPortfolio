@@ -230,16 +230,12 @@
             "stacks": [
                 {"name": "TypeScript"},
                 {"name": "Vue3"},
-                {"name": "Sass"},
-                {"name": "NodeJS"},
-                {"name": "MySQL"}
+                {"name": "Sass"}
             ],
             "themes": [
                 {"name": "TypeScript"},
                 {"name": "Vue 3"},
                 {"name": "Sass"},
-                {"name": "NodeJs"},
-                {"name": "MySQL"},
                 {"name": "E-commerce"}
             ],
             "buttons": [
@@ -259,23 +255,23 @@
                     "id": "1",
                     "source": "AmpliFury/pr2_view1.png",
                     "legend": {
-                        "title": "",
-                        "text":"AmpliFury MusicStore"
+                        "title": "AmpliFury MusicStore",
+                        "text":""
                     }
                 },
                 {
                     "id": "2",
                     "source": "AmpliFury/pr2_view2.png",
                     "legend": {
-                        "title": "",
-                        "text":"Explorez les produits selon les catégories."
+                        "title": "Navigation",
+                        "text":"Exploration des produits selon les catégories."
                     }
                 },
                 {
                     "id": "3",
                     "source": "AmpliFury/pr2_view3.png",
                     "legend": {
-                        "title": "",
+                        "title": "Filtrage des produits",
                         "text":"Catalogue de produits filtrable selon le prix (ascendants, descendants) et l'ordre alphabétique (ascendant, descendant)."
                     }
                 },
@@ -283,24 +279,24 @@
                     "id": "4",
                     "source": "AmpliFury/pr2_view4.png",
                     "legend": {
-                        "title": "",
-                        "text":"Ajoutez les produits à votre liste de souhaits."
+                        "title": "Réactivité avec Pinia 1",
+                        "text":"Ajout des produits à la liste de souhaits. Affichage en temps réel grâce au state Pinia."
                     }
                 },
                 {
                     "id": "5",
                     "source": "AmpliFury/pr2_view5.png",
                     "legend": {
-                        "title": "",
-                        "text":"Ajoutez les produits à votre panier d'achat."
+                        "title": "Réactivité avec Pinia 2",
+                        "text":"Ajout des produits au panier d'achat. Affichage en temps réel grâce au state Pinia."
                     }
                 },
                 {
                     "id": "6",
                     "source": "AmpliFury/pr2_view6.png",
                     "legend": {
-                        "title": "",
-                        "text":"Consultez les détails de chaque produit individuellement."
+                        "title": "Page produit",
+                        "text":"Consultation des détails de chaque produit individuellement."
                     }
                 }
             ]
