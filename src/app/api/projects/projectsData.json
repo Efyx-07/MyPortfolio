@@ -73,7 +73,7 @@
             "title": "OxyEvents Manager",
             "slug": "OxyEvents_Manager",
             "date": "octobre 2023 - décembre 2023",
-            "description": "Application de création et gestion d'évènements privés, développée sur mesure pour l'agence de relations presse Oxygen.",
+            "description": "Développement d'un outil de création et gestion d'évènements privés pour l'agence de relations presse Oxygen.",
             "presentation": "Dans le cadre d'une mission pour l'agence de relations presse Oxygen, j'ai créé cet outil interne en collaboration avec son pôle évenementiel. Réalisé de la maquette au développement final, celui-ci a été développé avec une base de données relationnelle en MySQL, un backend en NodeJs/Express et un frontend en Vue 3/Typescript avec design en Sass.",
             "image": {
                 "source": "EventsManager/pr1_imPres.png",
@@ -110,47 +110,47 @@
                 {
                     "id": "2",
                     "source": "EventsManager/pr1_view2.png",
-                    "legend": "Connexion sécurisée à votre dashboard avec identifiant et mot de passe."
+                    "legend": "Connexion sécurisée au dashboard avec identifiant et mot de passe."
                 },
                 {
                     "id": "3",
                     "source": "EventsManager/pr1_view3.png",
-                    "legend": "Créez vos évènements via un formulaire dédié et selon un template pré-défini (carte-évènement, sections, lieu lié à l'API Google Maps)."
+                    "legend": "Création d'évènements via un formulaire dédié et selon un template pré-défini (carte-évènement, sections, lieu lié à l'API Google Maps)."
                 },
                 {
                     "id": "4",
                     "source": "EventsManager/pr1_view4.png",
-                    "legend": "Retrouvez votre liste d'évènements, filtrable par date ou par mot-clé. Procédez aux différentes actions: mettre à jour ou supprimer un évènement, accéder à la page évènement, liste des participants."
+                    "legend": "Liste des évènements créés, filtrable par date ou par mot-clé. Accès aux différentes actions: mettre à jour ou supprimer un évènement, accéder à la page évènement, liste des participants."
                 },
                 {
                     "id": "5",
                     "source": "EventsManager/pr1_view5.png",
-                    "legend": "Mettez à jour les informations de votre évènement via un formulaire dédié prérempli."
+                    "legend": "Mise à jour des informations de l'évènement via un formulaire dédié prérempli avec les données renseignées à l'origine."
                 },
                 {
                     "id": "6",
                     "source": "EventsManager/pr1_view6.png",
-                    "legend": "Affichez votre page évènement via une URL unique, et envoyez le lien à vos invités."
+                    "legend": "Landing page de l'évènement à envoyer aux invités. Son URL unique (id complexe avec UUID) permet d'en limiter l'accès aux invités selectionnés."
                 },
                 {
                     "id": "7",
                     "source": "EventsManager/pr1_view7.png",
-                    "legend": "Vos invités confirment leur participation via un formulaire dédié."
+                    "legend": "Formulaire de confirmation de participation à l'évènement."
                 },
                 {
                     "id": "8",
                     "source": "EventsManager/pr1_view8.png",
-                    "legend": "Récupérez la liste de vos participants avec leurs informations dans votre dashboard et exportez la au format Excel."
+                    "legend": " Liste des participants à un évènement avec leurs informations, mise à jour de manière réactive dans le dashboard. Export possible au format Excel (avec Excel.js)."
                 },
                 {
                     "id": "9",
                     "source": "EventsManager/pr1_view9.png",
-                    "legend": "Managez votre équipe en ajoutant, modifiant ou supprimant des administrateurs."
+                    "legend": "Management de l'équipe administrateurs selon les rôles (Super Admin, Admin). Invitation nouvel admin par mail (avec Nodemailer et page de création de compte protégée par un token), modification mot de passe et suppression ancien administrateur."
                 },
                 {
                     "id": "10",
                     "source": "EventsManager/pr1_view10.png",
-                    "legend": "Application entièrement responsive, accessible sur tous les supports."
+                    "legend": "Design en Sass entièrement responsive. Application accessible sur tous les supports."
                 }
             ]
         },
