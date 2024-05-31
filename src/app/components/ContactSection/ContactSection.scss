@@ -1,9 +1,14 @@
 @import '../../../assets/sass/colors.scss';
 @import '../../../assets/sass/breakpoints.scss';
 
+.contact-section {
+    background: $accent1;
+}
+
 .contact-block {
     width: 100%;
     min-height: 50dvh;
+    background: $black;
     border: solid 2px $accent1;
     display: flex;
     flex-direction: column;
@@ -19,7 +24,7 @@
         text-align: center;
 
         h2 {
-            font-size: clamp(2rem, 5vw,3rem);
+            font-size: clamp(2rem, 5vw,3.5rem);
         }
     }
     
