@@ -13,9 +13,15 @@
                 "alt": "VibrLink"
             },
             "devType": "fullstack",
-            "stack": "REACT, TYPESCRIPT, SASS, NODEJS, MYSQL",
+            "stacks": [
+                {"name": "TypeScript"},
+                {"name": "React"},
+                {"name": "Sass"},
+                {"name": "NodeJS"},
+                {"name": "MySQL"}
+            ],
             "themes": [
-                {"name": "Typescript"},
+                {"name": "TypeScript"},
                 {"name": "React"},
                 {"name": "Sass"},
                 {"name": "NodeJs"},
@@ -80,9 +86,15 @@
                 "alt": "EventsManager"
             },
             "devType": "fullstack",
-            "stack": "VUE, TYPESCRIPT, SASS, NODEJS, MYSQL",
+            "stacks": [
+                {"name": "TypeScript"},
+                {"name": "Vue3"},
+                {"name": "Sass"},
+                {"name": "NodeJS"},
+                {"name": "MySQL"}
+            ],
             "themes": [
-                {"name": "Typescript"},
+                {"name": "TypeScript"},
                 {"name": "Vue 3"},
                 {"name": "Sass"},
                 {"name": "NodeJs"},
@@ -167,9 +179,15 @@
                 "alt": "AmpliFury"
             },
             "devType": "fullstack",
-            "stack": "VUE, TYPESCRIPT, SASS, NODEJS, MYSQL",
+            "stacks": [
+                {"name": "TypeScript"},
+                {"name": "Vue3"},
+                {"name": "Sass"},
+                {"name": "NodeJS"},
+                {"name": "MySQL"}
+            ],
             "themes": [
-                {"name": "Typescript"},
+                {"name": "TypeScript"},
                 {"name": "Vue 3"},
                 {"name": "Sass"},
                 {"name": "NodeJs"},

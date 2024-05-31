@@ -27,9 +27,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </div>
             <div className="project-description">
                 <div className="text-container">
-                    <p className="stack">{project.stack}</p>
+                    <div className="stacks-container">
+                        {project.stacks.map(stack => (
+                            <p key={stack.name} className="stack">{stack.name}</p>
+                        ))}
+                    </div>
                     <p className="title">{project.title}</p>
                     <p className="description">{project.description}</p>
+                    <p className="date">{project.date}</p>
                 </div>
                 <Button name="En savoir plus" onClick={()=> router.push(`/project/${project.slug}`)}/>
             </div>
