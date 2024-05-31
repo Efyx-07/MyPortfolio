@@ -172,13 +172,13 @@
             "title": "AmpliFury MusicStore",
             "slug": "AmpliFury_music_store",
             "date": "juillet 2023 - août 2023",
-            "description": "Site e-commerce spécialisé dans la vente d'instruments de musique, créatif et basé sur la réactivité de Vue3.",
+            "description": "Développement de l'interface d'un site e-commerce d'instruments de musique, créatif et basé sur la réactivité de Vue3.",
             "presentation": "AmpliFury MusicStore est un site e-commerce spécialisé dans la vente d'instruments de musique, construit avec Vue3 et Sass pour le frontend, NodeJs/Express pour le backend et base de données en MySQL. Il offre une navigation simple d'utilisation et profite pleinement de la réactivité du framework Vue3.",
             "image": {
                 "source": "AmpliFury/pr2_imPres.png",
                 "alt": "AmpliFury"
             },
-            "devType": "fullstack",
+            "devType": "frontend",
             "stacks": [
                 {"name": "TypeScript"},
                 {"name": "Vue3"},
