@@ -5,6 +5,8 @@ import LoadingPage from './components/LoadingPage';
 import HeroSection from './components/HeroSection';
 import ProjectSection from './components/ProjectSection';
 import SkillsSection from './components/SkillsSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
 import '../assets/sass/pages-common-style.scss';
 
 export default function Home() {
@@ -46,6 +48,8 @@ export default function Home() {
               <HeroSection />
               <ProjectSection />
               <SkillsSection />
+              <AboutSection />
+              <ContactSection />
             </>
           )
           :
