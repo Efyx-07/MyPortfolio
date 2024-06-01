@@ -34,9 +34,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     </div>
                     <p className="title">{project.title}</p>
                     <p className="description">{project.description}</p>
-                    <p className="date">{project.date}</p>
                 </div>
-                <Button name="En savoir plus" onClick={()=> router.push(`/project/${project.slug}`)}/>
+                <Button name="En savoir +" onClick={()=> router.push(`/project/${project.slug}`)}/>
             </div>
         </div>
     )

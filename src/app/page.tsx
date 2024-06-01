@@ -45,8 +45,8 @@ export default function Home() {
           (
             <>
               <HeroSection />
-              <ProjectSection />
               <SkillsSection />
+              <ProjectSection />
               <ContactSection />
             </>
           )
