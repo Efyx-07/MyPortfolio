@@ -18,7 +18,7 @@ export default function ContactSection() {
                         <p>N&apos;hésitez pas à me contacter par mail ou via mes réseaux sociaux.</p>
                     </div>
                     <div className="buttons-container">
-                        {contacts.map(contact => (
+                        {contacts.map((contact, index) => (
                             <Button 
                                 key={contact.name}
                                 name={contact.name}
@@ -26,7 +26,7 @@ export default function ContactSection() {
                                 link={contact.link}
                                 target={contact.target}
                                 rel={contact.rel}
-                                className='contact-button'
+                                className={index === 2 ? 'contact-button email-button' : 'contact-button'}
                             />  
                         ))}
                     </div>
