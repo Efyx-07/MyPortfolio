@@ -1,4 +1,4 @@
-import Project from "@/app/types/projectType";
+import { Project } from "@/app/types";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Button from "../Reusables/Button";

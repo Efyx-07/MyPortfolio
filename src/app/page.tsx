@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import { useContacts, useProjects, useSkills } from './hooks';
+import { Contact, Project, Skill } from './types';
 import LoadingPage from './components/LoadingPage';
 import HeroSection from './components/HeroSection';
 import ProjectSection from './components/ProjectSection';
@@ -14,9 +15,9 @@ export default function Home() {
   const [projectsLoaded, setProjectsLoaded] = useState<boolean>(false);
   const [skillsLoaded, setSkillsLoaded] = useState<boolean>(false);
 
-  const contacts = useContacts();
-  const projects = useProjects();
-  const skills = useSkills();
+  const contacts: Contact[] = useContacts();
+  const projects: Project[] = useProjects();
+  const skills: Skill[] = useSkills();
 
   useEffect(() => {
     if (contacts.length > 0) {

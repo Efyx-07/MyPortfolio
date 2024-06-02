@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Project from "@/app/types/projectType";
+import { Project } from "@/app/types";
 import ViewNavigator from "./ViewNavigator";
 import './ProjectViewer.scss';
 

@@ -1,6 +1,6 @@
 "use client"
 
-import Project from "@/app/types/projectType";
+import { Project } from "@/app/types";
 import Button from "../Reusables/Button";
 import Separator from "../Reusables/Separator";
 import '../../../assets/sass/sections-common-style.scss';

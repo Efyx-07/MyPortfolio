@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Skill } from '../types/skillType';
+import { Skill } from '../types';
 import { fetchSkills } from '../services/fetchSkills';
 
 export default function useSkills() {

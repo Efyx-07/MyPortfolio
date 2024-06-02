@@ -1,4 +1,4 @@
-import Contact from '../types/contactType';
+import { Contact } from '../types';
 import contactsData from '../api/contacts/contactsData.json';
 
 export async function fetchContacts(): Promise<Contact[]> {

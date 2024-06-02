@@ -1,6 +1,6 @@
 "use client"
 
-import Project from "@/app/types/projectType";
+import { Project } from "@/app/types";
 import { useState, useEffect, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
 import '../../../assets/sass/sections-common-style.scss';

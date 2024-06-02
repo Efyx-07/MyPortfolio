@@ -1,4 +1,4 @@
-export interface Skill {
+export default interface Skill {
     title: string;
     icon: string;
     stacks: Stack[];

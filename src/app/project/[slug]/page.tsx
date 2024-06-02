@@ -1,7 +1,7 @@
 // SSR rendered page 
 
 import { Metadata } from 'next';
-import Project from '@/app/types/projectType';
+import { Project } from '@/app/types';
 import { fetchProjects } from '@/app/services/fetchProjects';
 import ProjectDescription from '@/app/components/ProjectPage/ProjectDescription';
 import ProjectViewer from '@/app/components/ProjectPage/ProjectViewer';

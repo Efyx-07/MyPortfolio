@@ -1,4 +1,4 @@
-import { Skill } from "../types/skillType";
+import { Skill } from "../types";
 import skillsData from "../api/skills/skillsData.json";
 
 export async function fetchSkills(): Promise<Skill[]> {

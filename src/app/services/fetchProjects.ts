@@ -1,4 +1,4 @@
-import Project from '../types/projectType';
+import { Project } from '../types';
 import projectsData from '../api/projects/projectsData.json';
 import { unstable_noStore as noStore } from 'next/cache';
 

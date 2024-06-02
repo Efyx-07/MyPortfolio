@@ -1,4 +1,4 @@
-import { Skill } from "@/app/types/skillType";
+import { Skill } from "@/app/types";
 import { Icon } from '@iconify/react';
 import './SkillCard.scss';
 

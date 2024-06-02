@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Contact from '../types/contactType';
+import { Contact } from '../types';
 import { fetchContacts } from '../services/fetchContacts';
 
 export default function useContacts() {

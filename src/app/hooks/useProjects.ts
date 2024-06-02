@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Project from '../types/projectType';
+import { Project } from '../types';
 import { fetchProjects } from '../services/fetchProjects';
 
 export default function useProjects() {

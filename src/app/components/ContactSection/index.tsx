@@ -1,6 +1,6 @@
 //import SectionTitle from "../Reusables/SectionTitle";
 import { useContacts } from '@/app/hooks';
-import Contact from '@/app/types/contactType';
+import { Contact } from '@/app/types';
 import Button from '../Reusables/Button';
 import '../../../assets/sass/sections-common-style.scss';
 import './ContactSection.scss';

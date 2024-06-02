@@ -1,4 +1,4 @@
-import { Skill } from "@/app/types/skillType";
+import { Skill } from "@/app/types";
 import useSkills from "@/app/hooks/useSkills";
 import SkillCard from "./SkillCard";
 import SectionTitle from "../Reusables/SectionTitle";

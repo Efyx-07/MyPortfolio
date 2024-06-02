@@ -1,4 +1,4 @@
-import Project from "@/app/types/projectType";
+import { Project } from "@/app/types";
 import useProjects from "@/app/hooks/useProjects";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "../Reusables/SectionTitle";

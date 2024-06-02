@@ -3,7 +3,7 @@
 import Button from '../Reusables/Button';
 import SiteName from './SiteName';
 import useContacts from '@/app/hooks/useContacts';
-import Contact from '@/app/types/contactType';
+import { Contact } from '@/app/types';
 import './Header.scss';
 
 export default function Header() {
