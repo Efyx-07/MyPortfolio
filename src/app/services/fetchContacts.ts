@@ -1,22 +1,9 @@
 import { Contact } from '../types';
-import contactsData from '../api/contacts/contactsData.json';
+import { contactsData } from '../api';
 
-export async function fetchContacts(): Promise<Contact[]> {
+export default async function fetchContacts(): Promise<Contact[]> {
 
     const contacts: Contact[] = contactsData.contacts;
-    /*
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/contacts`, {
-        headers: {
-            Accept: "application/json",
-            method: "GET",
-        },
-    });
-
-    if (!response.ok) {
-        throw new Error(`Error while fetching datas: ${response.status}`);
-    }
-
-    const data = await response.json(); */
 
     if (!contacts) {
         throw new Error('Not the expected format');

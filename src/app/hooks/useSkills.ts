@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Skill } from '../types';
-import { fetchSkills } from '../services/fetchSkills';
+import { fetchSkills } from '../services';
 
 export default function useSkills() {
     const [skills, setSkills] = useState<Skill[]>([]);

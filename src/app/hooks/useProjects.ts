@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Project } from '../types';
-import { fetchProjects } from '../services/fetchProjects';
+import { fetchProjects } from '../services';
 
 export default function useProjects() {
     const [projects, setProjects] = useState<Project[]>([]);

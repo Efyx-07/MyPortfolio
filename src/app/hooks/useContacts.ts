@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Contact } from '../types';
-import { fetchContacts } from '../services/fetchContacts';
+import { fetchContacts } from '../services';
 
 export default function useContacts() {
     const [contacts, setContacts] = useState<Contact[]>([]);

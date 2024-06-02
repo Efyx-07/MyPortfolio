@@ -2,7 +2,7 @@
 
 import { Metadata } from 'next';
 import { Project } from '@/app/types';
-import { fetchProjects } from '@/app/services/fetchProjects';
+import { fetchProjects } from '@/app/services';
 import ProjectDescription from '@/app/components/ProjectPage/ProjectDescription';
 import ProjectViewer from '@/app/components/ProjectPage/ProjectViewer';
 import ProjectsNavigator from '@/app/components/ProjectPage/ProjectsNavigator';
