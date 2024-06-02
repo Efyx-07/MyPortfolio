@@ -1,6 +1,10 @@
 import { Skill } from "../types/skillType";
+import skillsData from "../api/skills/skillsData.json";
 
 export async function fetchSkills(): Promise<Skill[]> {
+
+    const skills: Skill[] = skillsData.skills;
+    /*
     const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/skills`, {
         headers: {
             Accept: "application/json",
@@ -12,11 +16,11 @@ export async function fetchSkills(): Promise<Skill[]> {
         throw new Error(`Error while fetching datas: ${response.status}`);
     }
 
-    const data = await response.json();
+    const data = await response.json(); */
 
-    if (!data.skills) {
+    if (!skills) {
         throw new Error('Not the expected format');
     }
 
-    return data.skills;
+    return skills;
 };

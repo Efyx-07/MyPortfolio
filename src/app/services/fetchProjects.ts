@@ -1,10 +1,12 @@
 import Project from '../types/projectType';
+import projectsData from '../api/projects/projectsData.json';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export async function fetchProjects(): Promise<Project[]> {
 
     noStore(); // allow the data dynamic render for SSR page
-    
+    const projects: Project[] =  projectsData.projects;
+    /*
     const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/projects`, {
         headers: {
             Accept: "application/json",
@@ -17,10 +19,10 @@ export async function fetchProjects(): Promise<Project[]> {
     }
 
     const data = await response.json();
-
-    if (!data.projects) {
+    */
+    if (!projects) {
         throw new Error('Not the expected format');
     }
 
-    return data.projects;
+    return projects;
 };
