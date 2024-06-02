@@ -5,14 +5,14 @@
             "id": "1",
             "title": "VibrLink",
             "slug": "VibrLink_fanlink_generator",
-            "date": "avril 2024 - en cours",
+            "date": "avr. 2024 - en cours",
             "description": "Application de génération de fanlinks pour toutes les sorties musicales. Basée sur l'API Spotify et réalisée en React.",
             "presentation": "VibrLink est une application de génération de fanlinks pour les sorties musicales. Celle-ci permet de générer une landing-page regroupant tous les liens d'une sortie vers les différentes plateformes de streaming, outil promotionnel indispensable pour les artistes. Basée sur l'API Spotify, la synchronisation des liens Deezer et YouTube est automatisée, 9 plateformes sont actuellement disponibles.",
             "image": {
                 "source": "VibrLink/pr3_imPres.png",
                 "alt": "VibrLink"
             },
-            "devType": "fullstack",
+            "devType": "Fullstack",
             "stacks": [
                 {"name": "TypeScript"},
                 {"name": "React"},
@@ -21,10 +21,12 @@
                 {"name": "MySQL"}
             ],
             "themes": [
+                {"name": "SAAS"},
                 {"name": "TypeScript"},
                 {"name": "React"},
+                {"name": "Zustand"},
                 {"name": "Sass"},
-                {"name": "NodeJs"},
+                {"name": "NodeJs / Express"},
                 {"name": "MySQL"},
                 {"name": "API"}
             ],
@@ -96,7 +98,7 @@
             "id": "2",
             "title": "OxyEvents Manager",
             "slug": "OxyEvents_Manager",
-            "date": "octobre 2023 - décembre 2023",
+            "date": "oct. 2023 - déc. 2023",
             "description": "Développement d'un outil de création et gestion d'évènements privés pour l'agence de relations presse Oxygen.",
             "presentation": "Dans le cadre d'une mission pour l'agence de relations presse Oxygen, j'ai créé cet outil interne en collaboration avec son pôle évenementiel. Réalisé de la maquette au développement final, celui-ci a été développé avec une base de données relationnelle en MySQL, un backend en NodeJs/Express et un frontend en Vue 3/Typescript avec design en Sass.",
             "image": {
@@ -114,9 +116,11 @@
             "themes": [
                 {"name": "TypeScript"},
                 {"name": "Vue 3"},
+                {"name": "Pinia"},
                 {"name": "Sass"},
                 {"name": "NodeJs"},
                 {"name": "MySQL"},
+                {"name": "Google maps API"},
                 {"name": "Nodemailer"}
             ],
             "buttons": [
@@ -235,6 +239,7 @@
             "themes": [
                 {"name": "TypeScript"},
                 {"name": "Vue 3"},
+                {"name": "Pinia"},
                 {"name": "Sass"},
                 {"name": "E-commerce"}
             ],

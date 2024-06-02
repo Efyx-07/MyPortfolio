@@ -16,12 +16,19 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
         <section>
             <div className="content">
                 <div className="project-description">
-                    <h2>{project.title}</h2>
-                    <p className="project-description">{project.description}</p>
+                    <div className="project-head">
+                        <h2>{project.title}</h2>
+                        <p className="project-description">{project.description}</p>
+                    </div>
                     <Separator />
                     <div className="presentation-links-container">
-                        {/* <p className="project-detail">Développement {project.devType} | {project.date}</p> */}
-                        <p className="presentation">{project.presentation}</p>
+                        <div className="presentation-container">
+                            <p className="project-detail">Développement {project.devType} | {project.date}</p>
+                            <div className="project-themes">
+                                {project.themes.map(theme => (<p key={theme.name} className="theme">{theme.name}</p>))}
+                            </div>
+                            <p className="presentation">{project.presentation}</p>
+                        </div>
                         <div className="buttons-container">
                             {project.buttons.map(button => (
                                 <Button 
