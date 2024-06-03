@@ -3,7 +3,7 @@
 .skill-card {
     height: 15rem;
     background: $blackRelief;
-    border: solid 1px rgba($white, .05);
+    border: solid 1px $whiteBorder;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
