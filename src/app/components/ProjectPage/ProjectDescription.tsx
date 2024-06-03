@@ -2,7 +2,6 @@
 
 import { Project } from "@/app/types";
 import Button from "../Reusables/Button";
-import Separator from "../Reusables/Separator";
 import '../../../assets/sass/sections-common-style.scss';
 import './ProjectDescription.scss';
 
@@ -20,7 +19,6 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
                         <h2>{project.title}</h2>
                         <p className="project-description">{project.description}</p>
                     </div>
-                    <Separator />
                     <div className="presentation-links-container">
                         <div className="presentation-container">
                             <p className="project-detail">Développement {project.devType} | {project.date}</p>
