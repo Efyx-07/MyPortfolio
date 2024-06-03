@@ -14,7 +14,7 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
     return (
         <section>
             <div className="content">
-                <div className="project-description">
+                <div className="project-description-container">
                     <div className="project-head">
                         <h2>{project.title}</h2>
                         <p className="project-description">{project.description}</p>
