@@ -12,7 +12,7 @@ export default function ProjectSection() {
     return (
         <section className="project-section">
             <div className="content">
-                <SectionTitle title="Projets récents" />
+                <SectionTitle title="Mes projets récents" />
                 <div className="projectCards-container">
                     {projects.map(project => (
                         <ProjectCard key={project.id} project={project} />
