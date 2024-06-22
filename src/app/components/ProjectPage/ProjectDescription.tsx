@@ -31,7 +31,7 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
                             {project.buttons.map(button => (
                                 <Button 
                                     key={button.name}
-                                    className="button"
+                                    className={button.name === 'Code' ? 'secondaryBtn button' : 'button'}
                                     name={button.name}
                                     link={button.link}
                                     icon={button.icon}

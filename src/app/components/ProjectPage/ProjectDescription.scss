@@ -55,11 +55,21 @@
 
         .buttons-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             gap: 1rem;
 
             .button {
                 width: 100%;
+            }
+
+            .secondaryBtn {
+                background: transparent;
+                border: solid 1px $accent1;
+
+                &:hover {
+                    background: $white;
+                    border-color: $white;
+                }
             }
         }
     }
