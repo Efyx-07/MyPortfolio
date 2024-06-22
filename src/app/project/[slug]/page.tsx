@@ -3,10 +3,12 @@
 import { Metadata } from 'next';
 import { Project } from '@/app/types';
 import { fetchProjects } from '@/app/services';
-import ProjectDescription from '@/app/components/ProjectPage/ProjectDescription';
-import ProjectViewer from '@/app/components/ProjectPage/ProjectViewer';
-import ProjectsNavigator from '@/app/components/ProjectPage/ProjectsNavigator';
 import '../../../assets/sass/pages-common-style.scss';
+
+import dynamic from 'next/dynamic';
+const ProjectDescription = dynamic(() => import('../../components/ProjectPage/ProjectDescription'));
+const ProjectViewer = dynamic(() => import('../../components/ProjectPage/ProjectViewer'));
+const ProjectsNavigator = dynamic(() => import('../../components/ProjectPage/ProjectsNavigator'));
 
 interface ProjectPageProps {
   params: { slug: string };
