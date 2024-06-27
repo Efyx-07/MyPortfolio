@@ -9,27 +9,27 @@
               "icon": "akar-icons:typescript-fill"
             }
           ],
-          "text": "J'utilise TypeScript pour assurer la cohérence des données tout au long du processus de développement et la maintenabilité du code."
+          "text": "Pour assurer la cohérence des données et la maintenabilité du code tout au long du développement."
         },
         
         { 
-          "title": "Frontend: Vue.js ou React",
+          "title": "Frontend: React ou VueJs",
           "icon": "gg:terminal",
           "stacks": [
             {
-              "name": "VueJs",
-              "icon": "carbon:logo-vue"
-            },
-            {
               "name": "React",
               "icon": "akar-icons:react-fill"
+            },
+            {
+              "name": "VueJs",
+              "icon": "carbon:logo-vue"
             }
           ],
-          "text": "Je développe des applications réactives à l'aide de Vue.js ou React et leurs meta-frameworks, Nuxt et Next."
+          "text": "React/NextJs ou VueJs/Nuxt pour des applications et sites web modernes et réactifs."
         },
 
         { 
-          "title": "UI Design: Sass, Figma, Adobe",
+          "title": "UI Design: Sass, Figma",
           "icon": "hugeicons:paint-board",
           "stacks": [
             {
@@ -39,13 +39,9 @@
             {
               "name": "Figma",
               "icon": "solar:figma-broken"
-            },
-            {
-              "name": "Adobe",
-              "icon": "streamline:adobe-solid"
             }
           ],
-          "text": "J'utilise Sass pour un design soigné et responsive d'interfaces maquettées avec Figma. Je maîtrise aussi la suite Adobe creative."
+          "text": "Sass pour un design soigné et responsive. Figma pour la maquette des interfaces."
         },
 
         { 
@@ -61,7 +57,7 @@
               "icon": "simple-icons:express"
             }
           ],
-          "text": "Capable de mettre en place un backend robuste avec Node.js/Express, je peux intervenir sur des projets fullstack."
+          "text": "Capable de mettre en place un backend en Node.js/Express, je peux intervenir au besoin sur des projets fullstack."
         },
 
         { 
@@ -97,7 +93,7 @@
               "icon": "ic:baseline-wordpress"
             }
           ],
-          "text": "J'utilise les outils suivants: Git/Github pour le versionning, Vercel pour le déploiement, Vitest pour les tests unitaires et le CMS Wordpress."
+          "text": "Git/Github pour le versionning, Vercel pour le déploiement, Vitest pour les tests unitaires et le CMS Wordpress."
         }
       ]
 }

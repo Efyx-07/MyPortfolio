@@ -15,7 +15,6 @@ export default function SkillCard({skill}: SkillCardProps) {
                 ))}
             </div>
             <div className="skillTitle-container">
-                {/* <Icon icon={skill.icon} /> */}
                 <p>{skill.title}</p>
             </div>
             <p className="text">{skill.text}</p>
