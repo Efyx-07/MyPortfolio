@@ -31,12 +31,12 @@
                 {
                     "name": "Demo",
                     "icon":"octicon:link-external-24",
-                    "link":"https://vibrlink.vercel.app/"
+                    "link":"https://vibrlink-next-test.vercel.app/"
                 },
                 {
                     "name": "Code",
                     "icon":"mingcute:github-line",
-                    "link":"https://github.com/Efyx-07/VibrLink"
+                    "link":"https://github.com/Efyx-07/Vibrlink_nextjs-zustand-sass"
                 }
             ],
             "views": [
@@ -112,13 +112,10 @@
             ],
             "themes": [
                 {"name": "TypeScript"},
-                {"name": "Vue 3"},
-                {"name": "Pinia"},
+                {"name": "Vue 3 / Pinia"},
                 {"name": "Sass"},
-                {"name": "NodeJs"},
-                {"name": "MySQL"},
-                {"name": "Google maps API"},
-                {"name": "Nodemailer"}
+                {"name": "NodeJs / Express"},
+                {"name": "MySQL"}
             ],
             "buttons": [
                 {
@@ -235,10 +232,8 @@
             ],
             "themes": [
                 {"name": "TypeScript"},
-                {"name": "Vue 3"},
-                {"name": "Pinia"},
-                {"name": "Sass"},
-                {"name": "E-commerce"}
+                {"name": "Vue 3 / Pinia"},
+                {"name": "Sass"}
             ],
             "buttons": [
                 {
