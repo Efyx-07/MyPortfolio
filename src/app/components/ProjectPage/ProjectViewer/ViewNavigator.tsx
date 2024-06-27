@@ -15,13 +15,13 @@ export default function ViewNavigator({showPreviousView, showNextView, currentVi
             <div className="viewNav-wrapper">
                 <div className="viewNav-button" onClick={showPreviousView}>
                     <Icon icon="ep:arrow-left-bold"/>
-                    Prev
+                    <p>Prev</p>
                 </div>
                 <div className="views-counter">
                     <p>{currentViewIndex + 1} / {totalViews}</p>
                 </div>
                 <div className="viewNav-button" onClick={showNextView}>
-                     Next
+                    <p>Next</p>
                     <Icon icon="ep:arrow-right-bold"/>
                 </div>
             </div>
