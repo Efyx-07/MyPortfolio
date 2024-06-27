@@ -6,6 +6,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-top: solid 1px $whiteBorder;
+    position: relative;
+    z-index: 1;
 
     p {
         font-size: .8rem;

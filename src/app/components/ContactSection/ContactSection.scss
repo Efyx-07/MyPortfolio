@@ -7,7 +7,9 @@
     background: $customLinearGradient;
     border-radius: 4rem 4rem 0 0;
     margin-top: 2rem;
-    padding: 4rem 0;
+    padding: 4rem 0 11rem 0;
+    margin-bottom: -6rem;
+    min-height: 70dvh;
 
     .contact-content {
         display: flex;
@@ -54,7 +56,6 @@
             }
     
             .email-button {
-                //border: solid 1px $white;
                 background: $accent1;
             }
         }
@@ -67,7 +68,7 @@
 @media (min-width: $smInter) {
 
     .contact-section {
-        padding: 8rem 0;
+        padding: 8rem 0 14rem 0;
         margin-top: 0;
 
         .contact-content {

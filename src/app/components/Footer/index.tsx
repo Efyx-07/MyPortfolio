@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <p>© {year} | développé par FX en Next.js </p>
+            <p>© {year} | développement et design par FX</p>
         </footer>
     )
 }
