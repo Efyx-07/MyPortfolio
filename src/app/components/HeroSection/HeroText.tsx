@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react';
 import useContacts from '@/app/hooks/useContacts';
 import { Contact } from '@/app/types';
 import Button from '../Reusables/Button';
+import Separator from '../Reusables/Separator';
 import './HeroText.scss';
 
 export default function HeroText() {
@@ -16,10 +17,11 @@ export default function HeroText() {
                     <p>Hello ! Je suis FX</p>
                 </div>
                 <h1>Développeur <span>Frontend</span></h1>
-                <div className="textIcon-container">
-                    <Icon icon="ic:baseline-place" className="icon"/>
-                    <p>Lille, France</p>
+                <Separator />
+                <div className="presentation">
+                    <p className='presentation-text'>Passionné par l’UI et l’expérience utilisateur, je développe des applications et sites web réactifs au design soigné.</p>
                 </div>
+                <Separator />
             </div>
             <div className="buttons-container">
                 {contacts.map((contact, index) => (
