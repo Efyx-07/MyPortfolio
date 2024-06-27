@@ -1,5 +1,9 @@
+@import '../../../assets/sass/colors.scss';
+
 .hero-section {
     display: flex;
     align-items: center;
     padding-top: 2rem;
+    background: $customLinearGradient;
+    border-radius: 0 0 4rem 4rem;
 }
