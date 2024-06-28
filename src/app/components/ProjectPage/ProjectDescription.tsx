@@ -22,10 +22,11 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
                     <div className="presentation-links-container">
                         <div className="presentation-container">
                             <p className="project-detail">Développement {project.devType} | {project.date}</p>
+                            <p className="presentation">{project.presentation}</p>
                             <div className="project-themes">
                                 {project.themes.map(theme => (<p key={theme.name} className="theme">{theme.name}</p>))}
                             </div>
-                            <p className="presentation">{project.presentation}</p>
+                            
                         </div>
                         <div className="buttons-container">
                             {project.buttons.map(button => (
