@@ -25,7 +25,7 @@ export default function ContactSection() {
                             link={contact.link}
                             target={contact.target}
                             rel={contact.rel}
-                            className={index === 2 ? 'contact-button email-button' : 'contact-button'}
+                            className={index === 2 ? 'button cta-button' : 'button'}
                         />  
                     ))}
                 </div>

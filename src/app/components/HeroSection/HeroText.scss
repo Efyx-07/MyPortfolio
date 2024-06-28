@@ -61,15 +61,16 @@
     .buttons-container {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 1rem;
 
         .button {
-            display: flex;
             width: 100%;
-            align-items: center;
-            justify-content: center;
-            gap: .5rem;
+        }
+
+        .cta-button {
+            background: $white;
+            color: $accent1;
         }
     }
 }

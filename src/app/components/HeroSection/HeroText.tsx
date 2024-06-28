@@ -25,7 +25,7 @@ export default function HeroText() {
             </div>
             <div className="buttons-container">
                 {contacts.map((contact, index) => (
-                    index < 2 && 
+                    index !== 1 && 
                         <Button 
                             key={contact.name}
                             name={contact.name}
@@ -33,7 +33,7 @@ export default function HeroText() {
                             link={contact.link}
                             target={contact.target}
                             rel={contact.rel}
-                            className='button'
+                            className={index === 2 ? 'button cta-button' : 'button'}
                         />  
                 ))}
             </div>
