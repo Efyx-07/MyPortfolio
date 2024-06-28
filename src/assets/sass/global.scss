@@ -7,16 +7,6 @@
 }
 
 @font-face {
-    font-family: 'Poppins-regular';
-    src: url(../fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins-medium';
-    src: url(../fonts/Poppins-Medium.ttf);
-}
-
-@font-face {
     font-family: 'Alumni';
     src: url(../fonts/AlumniSans-VariableFont_wght.ttf);
 }
@@ -65,7 +55,6 @@ body::-moz-scrollbar-thumb {
 
 p, h1, h2, h3, h4 {
     margin: 0;
-    font-family: 'Poppins-regular';
 }
 
 h1, h3 {
