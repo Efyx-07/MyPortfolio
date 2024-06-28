@@ -17,7 +17,7 @@ export default function Button({ name, icon, link, target, rel, className, onCli
     return (
         <a href={link} target={target ?? ""} rel={rel ?? ""}>
             <button className={className} onClick={onClick}>
-                <p>{name}</p>
+                <p className='button-name'>{name}</p>
                 <Icon icon= {icon ?? ""} />
             </button>
         </a>
