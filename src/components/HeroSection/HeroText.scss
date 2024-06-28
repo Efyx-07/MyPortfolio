@@ -31,31 +31,29 @@
             }
         }
 
-        .presentation {
-            .presentation-text {
-                font-size: clamp(1.15rem, 2vw, 1.2rem);
-                font-weight: 300;
-            }
-        }
-
-        .textIcon-container {
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-
-            .icon {
-                font-size: 1.5rem;
-            }
+        .presentation 
+        .presentation-text {
+            font-size: 1.1rem;
+            font-weight: 300;
         }
 
         .hello {
-            width: 14rem;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: .5rem;
+            width: 14rem;
             border: solid 1px $whiteBorder;
             border-radius: 3rem;
             padding: .5rem;
+
+            .icon {
+                font-size: 1.25rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
         }
     }
 
@@ -78,7 +76,8 @@
 
 @media (min-width: $sm) {
 
-    .hero-text .buttons-container {
+    .hero-text 
+    .buttons-container {
         width: unset;
         flex-direction: row;
 
@@ -98,4 +97,15 @@
             text-align: unset;
         }
     } 
+}
+
+@media (min-width: $xxl) {
+
+    .hero-text 
+    .text-container 
+    .presentation 
+    .presentation-text {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
 }

@@ -27,6 +27,13 @@
 
 @media (min-width: $lg) {
     .hero-image .image-container {
+        max-width: 24rem;
+        max-height: 24rem;
+    }
+}
+
+@media (min-width: $xxl) {
+    .hero-image .image-container {
         max-width: 28rem;
         max-height: 28rem;
     }
