@@ -1,4 +1,4 @@
-//import SectionTitle from "../Reusables/SectionTitle";
+import { motion } from "framer-motion";
 import { useContacts } from '@/hooks';
 import { Contact } from '@/types';
 import Button from '../Reusables/Button';
@@ -10,7 +10,12 @@ export default function ContactSection() {
     const contacts: Contact[] = useContacts();
 
     return (
-        <section className="contact-section">
+        <motion.section 
+            initial={{opacity: 0, y: 100}}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: .5, ease: "easeOut" }}
+            className="contact-section"
+        >
             <div className="content contact-content">
                 <div className="contact-text">
                     <h1>Envie de travailler <span>avec moi ?</span></h1>
@@ -30,6 +35,6 @@ export default function ContactSection() {
                     ))}
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }

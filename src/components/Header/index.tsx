@@ -5,6 +5,7 @@ import Button from '../Reusables/Button';
 import SiteName from './SiteName';
 import { useContacts } from '@/hooks';
 import { Contact } from '@/types';
+import { motion } from "framer-motion";
 import './Header.scss';
 
 export default function Header() {
@@ -29,7 +30,12 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={scrolled ? 'scrolled' : ''}>
+        <motion.header 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{ duration: .5, ease: "easeOut" }} 
+            className={scrolled ? 'scrolled' : ''}
+        >
             <div className="content">
                 <SiteName />
                 <div className="button-container">
@@ -47,6 +53,6 @@ export default function Header() {
                     ))}
                 </div>
             </div>
-        </header>
+        </motion.header>
     )
 }

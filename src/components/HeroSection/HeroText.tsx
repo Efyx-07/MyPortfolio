@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react';
 import { useContacts } from '@/hooks';
 import { Contact } from '@/types';
+import { motion } from "framer-motion";
 import Button from '../Reusables/Button';
 import Separator from '../Reusables/Separator';
 import './HeroText.scss';
@@ -10,17 +11,32 @@ export default function HeroText() {
     const contacts: Contact[] = useContacts();
 
     return (
-        <div className="hero-text">
+        <motion.div 
+            initial={{y: 30, opacity: 0}} 
+            animate={{y: 0, opacity: 1}} 
+            transition={{ duration: .5, ease: "easeOut" }} 
+            className="hero-text">
             <div className="text-container">
                 <div className="textIcon-container hello">
                     <Icon icon="solar:hand-shake-outline" className="icon"/>
                     <p>Hello ! Je suis FX</p>
                 </div>
-                <h1>Développeur <span>Frontend</span></h1>
+                <motion.h1
+                    initial={{y: 30, opacity: 0}} 
+                    animate={{y: 0, opacity: 1}} 
+                    transition={{ duration: .25, ease: "easeOut" }} 
+                >
+                    Développeur <span>Frontend</span>
+                </motion.h1>
                 <Separator />
-                <div className="presentation">
+                <motion.div 
+                    initial={{x: 50, opacity: 0}} 
+                    animate={{x: 0, opacity: 1}} 
+                    transition={{ duration: .25, ease: "easeOut" }} 
+                    className="presentation"
+                >
                     <p className='presentation-text'>Passionné par l’UI et l’expérience utilisateur, je développe des applications et sites web réactifs au design soigné.</p>
-                </div>
+                </motion.div>
                 <Separator />
             </div>
             <div className="buttons-container">
@@ -37,6 +53,6 @@ export default function HeroText() {
                         />  
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 }

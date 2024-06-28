@@ -1,9 +1,15 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import './HeroImage.scss';
 
 export default function HeroImage() {
     return (
-        <div className="hero-image">
+        <motion.div 
+            initial={{y: 100, opacity: 0}} 
+            animate={{y: 0, opacity: 1}} 
+            transition={{ duration: .5, ease: "easeOut" }}
+            className="hero-image"
+        >
             <div className="image-container">
                 <Image 
                     className="img"
@@ -14,6 +20,6 @@ export default function HeroImage() {
                     priority
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
