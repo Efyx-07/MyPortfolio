@@ -1,0 +1,29 @@
+@import '../../assets/sass/colors.scss';
+
+.site-name {
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent2;
+      font-weight: 600;
+      animation: upDown 1.2s infinite;
+    }
+
+    span {
+      font-weight: 400;
+    }
+}
+
+// animation au hover
+@keyframes upDown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    } 
+}

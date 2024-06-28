@@ -1,0 +1,101 @@
+@import '../../assets/sass/colors.scss';
+@import '../../assets/sass/breakpoints.scss';
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 20vw, 7rem);
+            line-height: .8;
+
+            span {
+                background: linear-gradient(to right, $accent1, $accent2);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color:transparent;
+            }
+        }
+
+        .presentation {
+            .presentation-text {
+                font-size: clamp(1.15rem, 2vw, 1.2rem);
+                font-weight: 300;
+            }
+        }
+
+        .textIcon-container {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            .icon {
+                font-size: 1.5rem;
+            }
+        }
+
+        .hello {
+            width: 14rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 1px $whiteBorder;
+            border-radius: 3rem;
+            padding: .5rem;
+        }
+    }
+
+    .buttons-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+
+        .button {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: $white;
+            color: $accent1;
+        }
+    }
+}
+
+@media (min-width: $sm) {
+
+    .hero-text .buttons-container {
+        width: unset;
+        flex-direction: row;
+
+        .button {
+            width: 12rem;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+
+    .hero-text {
+        align-items: unset;
+
+        .text-container {
+            align-items: unset;
+            text-align: unset;
+        }
+    } 
+}

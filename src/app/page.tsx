@@ -1,11 +1,11 @@
 "use client"
 
-import useAppInit from './hooks/useAppInit';
-import LoadingPage from './components/LoadingPage';
-import HeroSection from './components/HeroSection';
-import ProjectSection from './components/ProjectSection';
-import SkillsSection from './components/SkillsSection';
-import ContactSection from './components/ContactSection';
+import useAppInit from '@/hooks/useAppInit';
+import LoadingPage from '@/components/LoadingPage';
+import HeroSection from '@/components/HeroSection';
+import ProjectSection from '@/components/ProjectSection';
+import SkillsSection from '@/components/SkillsSection';
+import ContactSection from '@/components/ContactSection';
 import '../assets/sass/pages-common-style.scss';
 
 export default function Home() {

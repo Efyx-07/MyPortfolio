@@ -1,14 +1,14 @@
 // SSR rendered page 
 
 import { Metadata } from 'next';
-import { Project } from '@/app/types';
-import { fetchProjects } from '@/app/services';
+import { Project } from '@/types';
+import { fetchProjects } from '@/services';
 import '../../../assets/sass/pages-common-style.scss';
 
 import dynamic from 'next/dynamic';
-const ProjectDescription = dynamic(() => import('../../components/ProjectPage/ProjectDescription'));
-const ProjectViewer = dynamic(() => import('../../components/ProjectPage/ProjectViewer'));
-const ProjectsNavigator = dynamic(() => import('../../components/ProjectPage/ProjectsNavigator'));
+const ProjectDescription = dynamic(() => import('../../../components/ProjectPage/ProjectDescription'));
+const ProjectViewer = dynamic(() => import('../../../components/ProjectPage/ProjectViewer'));
+const ProjectsNavigator = dynamic(() => import('../../../components/ProjectPage/ProjectsNavigator'));
 
 interface ProjectPageProps {
   params: { slug: string };

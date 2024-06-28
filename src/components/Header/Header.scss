@@ -1,0 +1,52 @@
+@import '../../assets/sass/colors.scss';
+@import '../../assets/sass/breakpoints.scss';
+
+.scrolled {
+    background: $black;
+}
+header {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    transition: background .3s ease-in-out;
+
+    .content {
+        width: 100%;
+        max-width: 60rem;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+
+        .button-container {
+            width: 12rem;
+
+            .button {
+                background: transparent;
+                border: solid 1px $accent1;
+
+                &:hover {
+                    background: $white;
+                    border: none;
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    header .content {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: $xxl) {
+    header .content {
+        max-width: 90rem;
+    }
+}

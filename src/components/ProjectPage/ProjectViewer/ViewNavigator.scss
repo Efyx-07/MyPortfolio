@@ -1,0 +1,31 @@
+@import '../../../assets/sass/colors.scss';
+
+.views-navigator {
+    display: flex;
+    justify-content: center;
+
+    .viewNav-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        background: $black;
+        border: solid 1px $whiteBorder;
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+
+        .viewNav-button {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $accent2;
+            }
+        }
+
+        .views-counter {
+            width: 3rem;
+        }
+    }
+}
