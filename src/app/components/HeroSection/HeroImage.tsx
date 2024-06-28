@@ -7,12 +7,11 @@ export default function HeroImage() {
             <div className="image-container">
                 <Image 
                     className="img"
-                    src='/images/decoration/fxsavarydev.jpg' 
-                    layout="responsive"
+                    src='/images/decoration/fxsavarydev.jpg'
                     width={500}
                     height={500}
-                    objectFit="cover"
                     alt="fxsavary.com" 
+                    priority
                 />
             </div>
         </div>

@@ -40,10 +40,10 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
                             <Image 
                                 className="img"
                                 src={`/images/projects/${project.views[currentViewIndex].source}`}
-                                layout="responsive"
-                                width={500}
-                                height={500}
+                                width={1000}
+                                height={1000}
                                 alt={project.image.alt}
+                                priority
                             />
                         </div>
                         <div className="legend-container">

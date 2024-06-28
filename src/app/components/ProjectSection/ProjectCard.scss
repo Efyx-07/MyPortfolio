@@ -24,6 +24,8 @@
             display: block;
             position: relative;
             width: 100%;
+            height: auto;
+            object-fit: cover;
             transition: transform 5s ease-in-out;
         }
     }

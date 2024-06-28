@@ -18,11 +18,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <Image 
                     className="img"
                     src={`/images/projects/${project.image.source}`}
-                    layout="responsive"
-                    width={500}
-                    height={500}
-                    objectFit="cover"
+                    width={1000}
+                    height={1000}
                     alt={project.image.alt}
+                    priority
                 />
             </div>
             <div className="project-description">
