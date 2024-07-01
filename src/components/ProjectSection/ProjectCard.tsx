@@ -2,7 +2,6 @@ import { Project } from "@/types";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Button from "../Reusables/Button";
-import './ProjectCard.scss';
 
 interface ProjectCardProps {
     project: Project;

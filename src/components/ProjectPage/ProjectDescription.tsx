@@ -2,6 +2,7 @@
 
 import { Project } from "@/types";
 import Button from "../Reusables/Button";
+import { motion } from "framer-motion";
 import '../../assets/sass/sections-common-style.scss';
 import './ProjectDescription.scss';
 
