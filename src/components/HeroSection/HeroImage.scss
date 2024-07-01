@@ -6,10 +6,9 @@
     justify-content: center;
     width: 100%;
     border-radius: 100%;
-    border: solid 1px $accent1;
 
     .image-container {
-        display: block;
+        display: inline-block;
         width: 100%;
         max-width: 20rem;
         height: auto;
@@ -18,6 +17,7 @@
         border-radius: inherit;
 
         .img {
+            display: block;
             width: 100%;
             height: auto;
             border-radius: inherit;
