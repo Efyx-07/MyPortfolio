@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Project } from "@/types";
+import { motion } from "framer-motion";
 import ViewNavigator from "./ViewNavigator";
 import './ProjectViewer.scss';
 
@@ -34,7 +35,13 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
     return (
         <section className="projectViewer-section">
             <div className="content">
-                <div className="project-viewer">
+                <motion.div 
+                    initial={{y: 200, opacity: 0}} 
+                    whileInView={{y: 0, opacity: 1}} 
+                    viewport={{ once: true }}
+                    transition={{ duration: .5, ease: "easeOut" }} 
+                    className="project-viewer"
+                >
                     <div className="image-legend-container">
                         <div className="image-container">
                             <Image 
@@ -57,7 +64,7 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
                         currentViewIndex={currentViewIndex}
                         totalViews={totalViews}
                      />
-                </div>
+                </motion.div>
             </div>
         </section>
     )

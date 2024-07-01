@@ -16,11 +16,21 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
         <section>
             <div className="content">
                 <div className="project-description-container">
-                    <div className="project-head">
+                    <motion.div 
+                        initial={{x: 300, opacity: 0}} 
+                        animate={{x: 0, opacity: 1}} 
+                        transition={{ duration: .5, ease: "easeOut" }} 
+                        className="project-head"
+                    >
                         <h2>{project.title}</h2>
                         <p className="project-description">{project.description}</p>
-                    </div>
-                    <div className="presentation-links-container">
+                    </motion.div>
+                    <motion.div 
+                        initial={{x: -300, opacity: 0}} 
+                        animate={{x: 0, opacity: 1}} 
+                        transition={{ duration: .5, ease: "easeOut" }} 
+                        className="presentation-links-container"
+                    >
                         <div className="presentation-container">
                             <p className="project-detail">Développement {project.devType} | {project.date}</p>
                             <p className="presentation">{project.presentation}</p>
@@ -42,7 +52,7 @@ export default function ProjectDescription({ project }: ProjectDescriptionProps)
                                 />
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

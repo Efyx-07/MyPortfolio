@@ -7,7 +7,7 @@ export const cardVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: i * .15,
+            delay: i * .1,
             ease: 'easeOut'
         }
     })
