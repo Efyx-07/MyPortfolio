@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useContacts } from '@/hooks';
 import { Contact } from '@/types';
+import { Icon } from '@iconify/react';
 import Button from '../Reusables/Button';
 import '../../assets/sass/sections-common-style.scss';
 import './ContactSection.scss';

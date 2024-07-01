@@ -1,0 +1,21 @@
+@import '../assets/sass/colors.scss';
+
+.page {
+    position: relative;
+
+    .openButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100%;
+        background: $white;
+        color: $accent1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
