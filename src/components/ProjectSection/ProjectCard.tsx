@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     const router = useRouter();
 
     return (
-        <div className="project-card">
+        <>
             <div className="image-container">
                 <Image 
                     className="img"
@@ -36,6 +36,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 </div>
                 <Button name="En savoir +" onClick={()=> router.push(`/project/${project.slug}`)}/>
             </div>
-        </div>
+        </>
     )
 }
