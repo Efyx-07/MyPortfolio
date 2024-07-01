@@ -11,7 +11,7 @@ export default function ContactSection() {
 
     return (
         <motion.section 
-            initial={{opacity: 0, y: 100}}
+            initial={{opacity: 0, y: 300}}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: .5, ease: "easeOut" }}
@@ -19,7 +19,8 @@ export default function ContactSection() {
         >
             <div className="content contact-content">
                 <div className="contact-text">
-                    <h1>Envie de travailler <span>avec moi ?</span></h1>
+                    <p className="contact-head">Une idée de site web, une application ou un SAAS ?</p>
+                    <h1>Travaillons <span>ensemble </span>sur une solution innovante</h1>
                     <p>N&apos;hésitez pas à me contacter par mail ou via mes réseaux sociaux.</p>
                 </div>
                 <div className="contact-buttons-container">
