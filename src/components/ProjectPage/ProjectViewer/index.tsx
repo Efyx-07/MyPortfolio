@@ -36,7 +36,7 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
         <section className="projectViewer-section">
             <div className="content">
                 <motion.div 
-                    initial={{y: 200, opacity: 0}} 
+                    initial={{y: 100, opacity: 0}} 
                     whileInView={{y: 0, opacity: 1}} 
                     viewport={{ once: true }}
                     transition={{ duration: .5, ease: "easeOut" }} 
