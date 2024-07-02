@@ -6,8 +6,8 @@
             "title": "VibrLink",
             "slug": "VibrLink_fanlink_generator",
             "date": "avr. 2024 - en cours",
-            "description": "Saas de génération de fanlinks pour la promotion de sorties musicales. Basée sur l'API Spotify et réalisée en NextJs.",
-            "presentation": "VibrLink est un Saas de génération de fanlinks pour sorties musicales, outil promotionnel indispensable pour les artistes. Basé sur l’API Spotify, j’ai développé cette application selon 3 axes principaux : la facilité d’usage (car destinée à des utilisateurs non techniques),  l’UI design de la landing-page générée et l’optimisation SEO des landing page qui seront partagées sur les réseaux sociaux.",
+            "description": "SaaS de génération de fanlinks pour la promotion de sorties musicales. Basée sur l'API Spotify et réalisée en NextJs.",
+            "presentation": "VibrLink est un SaaS de génération de fanlinks pour sorties musicales, outil promotionnel indispensable pour les artistes. Basé sur l’API Spotify, j’ai développé cette application selon 3 axes principaux : L'usage intuitif (car destinée à des utilisateurs non techniques),  l’UI design de la landing-page générée et l’optimisation SEO des landing page qui seront partagées sur les réseaux sociaux.",
             "image": {
                 "source": "VibrLink/pr3_imPres.png",
                 "alt": "VibrLink"

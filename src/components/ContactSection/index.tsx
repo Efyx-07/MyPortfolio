@@ -19,7 +19,7 @@ export default function ContactSection() {
         >
             <div className="content contact-content">
                 <div className="contact-text">
-                    <p className="contact-head">Une idée de site web, d&apos;application ou de Saas ?</p>
+                    <p className="contact-head">Une idée de site web, d&apos;application ou de SaaS ?</p>
                     <h1>Travaillons <span>ensemble </span>sur une solution innovante</h1>
                     <p>N&apos;hésitez pas à me contacter par mail ou via mes réseaux sociaux.</p>
                 </div>
