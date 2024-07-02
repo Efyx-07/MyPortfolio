@@ -11,7 +11,7 @@ export default function ContactSection() {
 
     return (
         <motion.section 
-            initial={{opacity: 0, y: 300}}
+            initial={{opacity: 0, y: 100}}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: .5, ease: "easeOut" }}
