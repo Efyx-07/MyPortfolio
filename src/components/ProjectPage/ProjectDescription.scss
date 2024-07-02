@@ -64,14 +64,9 @@
                 width: 100%;
             }
 
-            .secondaryBtn {
-                background: transparent;
-                border: solid 1px $accent1;
-
-                &:hover {
-                    background: $white;
-                    border-color: $white;
-                }
+            .cta-button {
+                background: $white;
+                color: $accent1;
             }
         }
     }
