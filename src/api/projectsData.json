@@ -52,8 +52,8 @@
                     "id": "2",
                     "source": "VibrLink/pr3_view2.png",
                     "legend": {
-                        "title": "Homepage",
-                        "text":"Création de compte ou connexion sécurisée, application multi-users."
+                        "title": "Implémentation des API",
+                        "text":"Le développement de l'application nécessitait une maîtrise de l'API Spotify. Celle-ci interagit avec les API de Deezer et YouTube pour créer automatiquement des liens vers ces deux plateformes. Pour les autres plateformes, les liens sont générés manuellement."
                     }
                 },
                 {
@@ -69,7 +69,7 @@
                     "source": "VibrLink/pr3_view4.png",
                     "legend": {
                         "title": "Liste des fanlinks créés",
-                        "text":"Liste des fanlinks de l'utilisateur connecté."
+                        "text":"Liste des fanlinks de l'utilisateur connecté avec les fonctionnalités utilitaires (mise à jour, suppression, accés à la landing page et copie dans le clip-board)."
                     }
                 },
                 {
@@ -85,7 +85,15 @@
                     "source": "VibrLink/pr3_view6.png",
                     "legend": {
                         "title": "Landing page",
-                        "text":"Exemple de landing page générée, regroupant les liens vers les différentes plateformes de streaming, à partager sur les réseaux sociaux. SEO optimisé grâce aux metadata et rendu SSR de NextJs."
+                        "text":"Le design de la landing page, qui sera partagé sur les réseaux sociaux, est crucial pour l'utilisateur final. J'ai donc créé un design moderne et épuré, adaptable à une grande variété d'artworks. De plus, j'ai développé des versions spécifiques pour les formats desktop et mobile."
+                    }
+                },
+                {
+                    "id": "7",
+                    "source": "VibrLink/pr3_view7.png",
+                    "legend": {
+                        "title": "Optimisation SEO avec NextJs",
+                        "text":"J'ai choisi de développer cette application avec NextJS. Ce framework permet un rendu SSR de la landing page, facilitant l'optimisation du SEO. Les métabalises dynamiques sont parfaitement reconnues par les bots de Facebook et Twitter (X)"
                     }
                 }
             ]
