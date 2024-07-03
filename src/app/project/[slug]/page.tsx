@@ -3,6 +3,7 @@
 import { Metadata } from 'next';
 import { Project } from '@/types';
 import { fetchProjects } from '@/services';
+import ProjectNotFound from '@/components/ProjectPage/ProjectNotFound';
 import '../../../assets/sass/pages-common-style.scss';
 
 import dynamic from 'next/dynamic';
@@ -43,7 +44,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       <ProjectsNavigator projects={projects} project={project}/>
                   </div>
                 </div>
-            ) : <p>Project not found</p>
+            ) : <ProjectNotFound />
         }
     </>
   );
