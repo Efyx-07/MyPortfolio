@@ -3,6 +3,8 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Button from "../Reusables/Button";
 
+import { useState } from "react";
+
 interface ProjectCardProps {
     project: Project;
 }
@@ -10,6 +12,12 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
 
     const router = useRouter();
+    const [isLoading, setIsLoading] = useState(false);
+
+    const navToProjectPage = (): void => {
+        setIsLoading(true);
+        router.push(`/project/${project.slug}`)
+    }
 
     return (
         <>
@@ -33,7 +41,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     <p className="title">{project.title}</p>
                     <p className="description">{project.description}</p>
                 </div>
-                <Button name="En savoir +" onClick={()=> router.push(`/project/${project.slug}`)}/>
+                {isLoading ? (
+                    <Button name="Chargement..." className="loading-button" />
+                    ) 
+                    : (
+                    <Button name="En savoir +" onClick={navToProjectPage}/>
+                    ) 
+                }
             </div>
         </>
     )
