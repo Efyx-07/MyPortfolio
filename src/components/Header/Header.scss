@@ -23,6 +23,17 @@ header {
         align-items: center;
 
         .button-container {
+            display: none;
+        }
+    }   
+}
+
+@media (min-width: $lg) {
+    header .content {
+        padding: 0 2rem;
+
+        .button-container {
+            display: block;
             width: 12rem;
 
             .button {
@@ -36,12 +47,6 @@ header {
                 }
             }
         }
-    }
-}
-
-@media (min-width: $lg) {
-    header .content {
-        padding: 0 2rem;
     }
 }
 

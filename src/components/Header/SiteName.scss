@@ -1,18 +1,33 @@
 @import '../../assets/sass/colors.scss';
 
-.site-name {
-    color: $white;
-    cursor: pointer;
+.siteName-logo-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  cursor: pointer;
 
-    &:hover {
-      color: $accent2;
-      font-weight: 600;
-      animation: upDown 1.2s infinite;
+  &:hover {
+    animation: upDown 1.2s infinite;
+  }
+
+  .logo-container {
+    height: 2rem;
+    width: auto;
+
+    .logo {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
     }
+  }
+
+  .site-name {
+    color: $white;
 
     span {
       font-weight: 400;
     }
+  }
 }
 
 // animation au hover
