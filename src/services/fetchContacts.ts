@@ -1,5 +1,5 @@
-import { Contact } from '../app/types';
-import { contactsData } from '../api';
+import { Contact } from '@/types';
+import { contactsData } from '@/api';
 
 export default async function fetchContacts(): Promise<Contact[]> {
 

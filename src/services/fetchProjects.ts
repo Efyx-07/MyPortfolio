@@ -1,5 +1,5 @@
-import { Project } from '../app/types';
-import { projectsData } from '../api';
+import { Project } from '@/types';
+import { projectsData } from '@/api';
 import { unstable_noStore as noStore } from 'next/cache';
 
 export default async function fetchProjects(): Promise<Project[]> {

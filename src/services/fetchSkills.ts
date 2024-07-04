@@ -1,5 +1,5 @@
-import { Skill } from "../app/types";
-import { skillsData } from "../api";
+import { Skill } from "@/types";
+import { skillsData } from "@/api";
 
 export default async function fetchSkills(): Promise<Skill[]> {
 
