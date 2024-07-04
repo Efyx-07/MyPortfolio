@@ -1,10 +1,24 @@
+@import '../../assets/sass/colors.scss';
+
 .project-not-found {
-    height: calc(100vh - 12rem);
+    //height: calc(100vh - 12rem);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    background: $black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 
-    p {
-        font-size: 2rem;
+    .mention {
+        font-size: 1.5rem;
+    }
+
+    .back-button {
+        width: 14rem;
     }
 }
