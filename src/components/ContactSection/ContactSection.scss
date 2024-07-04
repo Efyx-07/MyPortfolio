@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background: $customLinearGradient;
-    border-radius: 4rem 4rem 0 0;
+    border-radius: 2rem 2rem 0 0;
     margin-top: 2rem;
     padding: 4rem 0 11rem 0;
     margin-bottom: -6rem;
@@ -102,5 +102,11 @@
             }
         }
     } 
+}
 
+@media (min-width: $lg) {
+
+    .contact-section {
+        border-radius: 4rem 4rem 0 0;
+    }
 }
