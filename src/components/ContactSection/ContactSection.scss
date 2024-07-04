@@ -28,11 +28,15 @@
             .contact-head {
                 width: 100%;
                 max-width: 34rem;
-                border: solid 5px $accent1;
+                border: solid 10px $accent1;
                 border-radius: 3rem;
                 padding: 1.25rem 1rem;
                 margin-bottom: 2rem;
-                font-size: 1.1rem;
+                overflow: hidden;
+
+                p {
+                    font-size: 1.1rem;
+                }
             }
 
             p {

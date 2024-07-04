@@ -19,7 +19,16 @@ export default function ContactSection() {
         >
             <div className="content contact-content">
                 <div className="contact-text">
-                    <p className="contact-head">Une idée de site web, d&apos;application ou de SaaS ?</p>
+                    <div className="contact-head">
+                        <motion.p
+                            initial={{opacity: 0, x: 100}}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: .5, ease: "easeOut" }}
+                        >
+                            Une idée de site web, d&apos;application ou de SaaS ?
+                        </motion.p>
+                    </div>
                     <h1>Travaillons <span>ensemble </span>sur une solution innovante</h1>
                     <p>N&apos;hésitez pas à me contacter par mail ou via mes réseaux sociaux.</p>
                 </div>
