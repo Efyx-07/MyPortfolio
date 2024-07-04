@@ -38,11 +38,11 @@ header {
 
             .button {
                 background: transparent;
-                border: solid 1px $accent1;
+                border: solid 2px $accent1;
 
                 &:hover {
                     background: $white;
-                    border: none;
+                    border-color: transparent;
                     color: $accent1;
                 }
             }
