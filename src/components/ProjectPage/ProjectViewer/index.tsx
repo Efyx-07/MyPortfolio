@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Project } from "@/types";
 import { motion } from "framer-motion";
+import Separator from "@/components/Reusables/Separator";
 import ViewNavigator from "./ViewNavigator";
 import './ProjectViewer.scss';
 
@@ -55,6 +56,7 @@ export default function ProjectViewer({project}: ProjectViewerProps) {
                         </div>
                         <div className="legend-container">
                             <p className="legend-title">{project.views[currentViewIndex].legend.title}</p>
+                            <Separator />
                             <p className="legend-text">{project.views[currentViewIndex].legend.text}</p>
                         </div>
                     </div>
