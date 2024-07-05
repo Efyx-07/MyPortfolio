@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /*
-Allow: /$
+Disallow: 
 
 Sitemap: https://www.fxsavary.com/sitemap.xml

@@ -6,7 +6,7 @@ import "../assets/sass/global.scss";
 
 export const metadata: Metadata = {
   title: "François-Xavier Savary | Développeur frontend",
-  description: "Hello, je suis François-Xavier, développeur frontend basé à Lille en France. Passionné par l’UI et l’expérience utilisateur, je développe des applications et sites web réactifs au design soigné. Ma stack principale: TypeScript, React, NextJs, VueJs, Sass, NodeJs",
+  description: "Hello, je suis François-Xavier, développeur frontend basé à Lille en France. Passionné par l’UI et l’expérience utilisateur, je développe des applications, SaaS et sites web réactifs au design soigné. Ma stack principale: TypeScript, React, NextJs, VueJs, Sass, NodeJs",
   alternates: {
     canonical: 'https://www.fxsavary.com/',
   },
