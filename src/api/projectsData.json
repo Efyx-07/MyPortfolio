@@ -45,7 +45,7 @@
                     "source": "VibrLink/pr3_view1.png",
                     "legend": {
                         "title": "VibrLink - Fanlink generator",
-                        "text":"VibrLink - Fanlink generator"
+                        "text":"SaaS dédié à la promotion de sorties musicales."
                     }
                 },
                 {
@@ -143,7 +143,7 @@
                     "source": "EventsManager/pr1_view1.png",
                     "legend": {
                         "title": "OxyEvents Manager",
-                        "text":""
+                        "text":"Application de création et de gestion d'évènements privés."
                     }
                 },
                 {
@@ -151,7 +151,7 @@
                     "source": "EventsManager/pr1_view2.png",
                     "legend": {
                         "title": "Connexion",
-                        "text":"Connexion sécurisée au dashboard avec identifiant et mot de passe. Option mot de passe oublié: envoi d'un lien de réinitialisation par mail avec Nodemailer."
+                        "text":"Connexion sécurisée au dashboard avec identifiant et mot de passe. Option mot de passe oublié: envoi d'un lien de réinitialisation par mail avec Nodemailer. Plusieurs niveaux d'administrateurs: SUPERADMIN, ADMIN, GUEST et GENERIC."
                     }
                 },
                 {
@@ -261,7 +261,7 @@
                     "source": "AmpliFury/pr2_view1.png",
                     "legend": {
                         "title": "AmpliFury MusicStore",
-                        "text":""
+                        "text":"Interface d'un site e-commerce basé sur la réctivité d'une single-page-application."
                     }
                 },
                 {
