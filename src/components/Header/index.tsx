@@ -1,16 +1,21 @@
 "use client"
 
 import { useState, useEffect } from 'react';
+import { Contact } from '@/types';
+import { useQuery } from '@tanstack/react-query';
+import { fetchContacts } from '@/services';
+import { motion } from "framer-motion";
 import Button from '../Reusables/Button';
 import SiteName from './SiteName';
-import { useContacts } from '@/hooks';
-import { Contact } from '@/types';
-import { motion } from "framer-motion";
 import './Header.scss';
 
 export default function Header() {
 
-    const contacts: Contact[] = useContacts();
+    const { data: contacts = [] } = useQuery<Contact[]>({
+        queryKey: ['contacts'],
+        queryFn: fetchContacts
+    });
+    
     const [ scrolled, setScrolled ] = useState<boolean>(false);
 
     useEffect(() => {

@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react';
-import { useContacts } from '@/hooks';
 import { Contact } from '@/types';
+import { useQuery } from '@tanstack/react-query';
+import { fetchContacts } from '@/services';
 import { motion } from "framer-motion";
 import Button from '../Reusables/Button';
 import Separator from '../Reusables/Separator';
@@ -8,7 +9,10 @@ import './HeroText.scss';
 
 export default function HeroText() {
 
-    const contacts: Contact[] = useContacts();
+    const { data: contacts = [] } = useQuery<Contact[]>({
+        queryKey: ['contacts'],
+        queryFn: fetchContacts
+    });
 
     return (
         <motion.div 

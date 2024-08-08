@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
 import { cardVariants } from "@/framer-motion/cardVariants";
 import { Project } from "@/types";
-import useProjects from "@/hooks/useProjects";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "../Reusables/SectionTitle";
+import { useQuery } from '@tanstack/react-query';
+import { fetchProjects } from "@/services";
 import '../../assets/sass/sections-common-style.scss';
 import './ProjectSection.scss';
 import './ProjectCard.scss';
 
 export default function ProjectSection() {
 
-    const projects: Project[] = useProjects();
+    const { data: projects = [] } = useQuery<Project[]>({
+        queryKey: ['projects'],
+        queryFn: fetchProjects
+    });
 
     return (
         <section className="project-section">

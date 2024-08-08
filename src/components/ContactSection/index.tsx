@@ -1,13 +1,17 @@
 import { motion } from "framer-motion";
-import { useContacts } from '@/hooks';
 import { Contact } from '@/types';
+import { useQuery } from '@tanstack/react-query';
+import { fetchContacts } from '@/services';
 import Button from '../Reusables/Button';
 import '../../assets/sass/sections-common-style.scss';
 import './ContactSection.scss';
 
 export default function ContactSection() {
 
-    const contacts: Contact[] = useContacts();
+    const { data: contacts = [] } = useQuery<Contact[]>({
+        queryKey: ['contacts'],
+        queryFn: fetchContacts
+    });
 
     return (
         <motion.section 

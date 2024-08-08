@@ -1,6 +1,6 @@
 "use client"
 
-import useAppInit from '@/hooks/useAppInit';
+import { useEffect, useState } from 'react';
 import LoadingPage from '@/components/LoadingPage';
 import HeroSection from '@/components/HeroSection';
 import ProjectSection from '@/components/ProjectSection';
@@ -10,12 +10,18 @@ import '../assets/sass/pages-common-style.scss';
 
 export default function Home() {
 
-  const allDataLoaded: boolean = useAppInit();
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true)
+    }, 500);
+  }, [isLoaded]);
 
   return (
     <div className='page'>
       <div className="content">
-        {allDataLoaded ? 
+        {isLoaded ? 
           (
             <>
               <HeroSection />
