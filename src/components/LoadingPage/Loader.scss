@@ -6,8 +6,7 @@
     border-radius: 100%;
     position: relative;
     overflow: hidden;
-    border: solid 3px $accent1;
-    //background: red;
+    border: solid 1px rgba($accent1, .25);
 
     p {
         font-size: 1.25rem;
@@ -17,11 +16,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9;
-        //opacity: 0;
     }
 
     .progress-bar {
-        //background: red;
         position: absolute;
         width: 100%;
         height: 100%;
