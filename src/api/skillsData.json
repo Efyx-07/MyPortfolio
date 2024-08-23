@@ -21,11 +21,15 @@
               "icon": "akar-icons:react-fill"
             },
             {
+              "name": "NextJs",
+              "icon": "teenyicons:nextjs-outline"
+            },
+            {
               "name": "VueJs",
               "icon": "carbon:logo-vue"
             }
           ],
-          "text": "React/NextJs ou VueJs/Nuxt pour des applications et sites web modernes et réactifs."
+          "text": "React/NextJs ou VueJs pour des applications et sites web modernes et réactifs."
         },
 
         { 
@@ -45,7 +49,7 @@
         },
 
         { 
-          "title": "Backend: NodeJs/Express",
+          "title": "Backend: NodeJs",
           "icon": "ph:database",
           "stacks": [
             {
@@ -53,11 +57,15 @@
               "icon": "fa6-brands:node-js"
             },
             {
+              "name": "NestJs",
+              "icon": "simple-icons:nestjs"
+            },
+            {
               "name": "ExpressJs",
               "icon": "simple-icons:express"
             }
           ],
-          "text": "Capable de mettre en place un backend en Node.js/Express, je peux intervenir au besoin sur des projets fullstack."
+          "text": "Je peux intervenir sur des projets fullstack avec la mise en place d'un backend en Express ou NestJs."
         },
 
         { 
