@@ -93,15 +93,15 @@
               "icon": "akar-icons:vercel-fill"
             },
             {
-              "name": "Vitest",
-              "icon": "simple-icons:vitest"
+              "name": "Jest",
+              "icon": "simple-icons:jest"
             },
             {
               "name": "Wordpress",
               "icon": "ic:baseline-wordpress"
             }
           ],
-          "text": "Git/Github pour le versionning, Vercel pour le déploiement, Vitest pour les tests unitaires et le CMS Wordpress."
+          "text": "Git/Github pour le versionning, Vercel pour le déploiement, Jest pour les tests unitaires et le CMS Wordpress."
         }
       ]
 }
