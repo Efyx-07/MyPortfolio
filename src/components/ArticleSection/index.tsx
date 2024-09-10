@@ -5,13 +5,9 @@ import ArticleCard from './ArticleCard';
 import SectionTitle from '../Reusables/SectionTitle';
 import { useQuery } from '@tanstack/react-query';
 import { fetchArticles } from '@/services';
+import useReverseArticles from '@/hooks/useReverseArticles';
 import '../../assets/sass/sections-common-style.scss';
 import '../../assets/sass/dynamic-section.scss';
-
-// Function to return a new array of reversed articles
-const reverseArticles = (articles: readonly Article[]) => {
-  return [...articles].reverse();
-};
 
 export default function ArticleSection() {
   const { data: articles = [] } = useQuery<Article[]>({
@@ -20,7 +16,7 @@ export default function ArticleSection() {
   });
 
   // Reverse the articles array and only take the 3 last ones
-  const reversedArticles: Article[] = reverseArticles(articles).slice(0, 3);
+  const reversedArticles: Article[] = useReverseArticles(articles).slice(0, 3);
 
   return (
     <section className="article-section dynamic-section">

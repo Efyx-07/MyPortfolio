@@ -6,6 +6,7 @@ import { Article } from '@/types/article.interface';
 import ArticleCard from '@/components/ArticleSection/ArticleCard';
 import { useQuery } from '@tanstack/react-query';
 import { fetchArticles } from '@/services';
+import useReverseArticles from '@/hooks/useReverseArticles';
 import '../../assets/sass/pages-common-style.scss';
 import '../../assets/sass/sections-common-style.scss';
 import './blog-page.scss';
@@ -16,13 +17,15 @@ export default function BlogPage() {
     queryFn: fetchArticles,
   });
 
+  const reversedArticles: Article[] = useReverseArticles(articles);
+
   return (
     <div className="page">
       <div className="content">
         <section>
           <div className="content">
             <div className="article-cards-container">
-              {articles.map((article, index) => (
+              {reversedArticles.map((article, index) => (
                 <motion.div
                   key={article.id}
                   custom={index}
