@@ -6,7 +6,7 @@ import SectionTitle from '../Reusables/SectionTitle';
 import { useQuery } from '@tanstack/react-query';
 import { fetchProjects } from '@/services';
 import '../../assets/sass/sections-common-style.scss';
-import './ProjectSection.scss';
+import '../../assets/sass/dynamic-section.scss';
 import './ProjectCard.scss';
 
 export default function ProjectSection() {
@@ -16,10 +16,10 @@ export default function ProjectSection() {
   });
 
   return (
-    <section className="project-section">
+    <section className="project-section dynamic-section ">
       <div className="content">
         <SectionTitle title="Mes projets récents" />
-        <div className="projectCards-container">
+        <div className="dynamic-cards-container">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}

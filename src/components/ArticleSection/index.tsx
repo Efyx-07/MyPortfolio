@@ -6,8 +6,7 @@ import SectionTitle from '../Reusables/SectionTitle';
 import { useQuery } from '@tanstack/react-query';
 import { fetchArticles } from '@/services';
 import '../../assets/sass/sections-common-style.scss';
-//import './ProjectSection.scss';
-//import './ProjectCard.scss';
+import '../../assets/sass/dynamic-section.scss';
 
 export default function ArticleSection() {
   const { data: articles = [] } = useQuery<Article[]>({
@@ -16,10 +15,10 @@ export default function ArticleSection() {
   });
 
   return (
-    <section className="article-section">
+    <section className="article-section dynamic-section">
       <div className="content">
         <SectionTitle title="Mes derniers articles" />
-        <div className="projectCards-container">
+        <div className="dynamic-cards-container">
           {articles.map((article, index) => (
             <motion.div
               key={article.id}
