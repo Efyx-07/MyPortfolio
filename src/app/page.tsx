@@ -5,6 +5,7 @@ import LoadingPage from '@/components/LoadingPage';
 import HeroSection from '@/components/HeroSection';
 import ProjectSection from '@/components/ProjectSection';
 import SkillsSection from '@/components/SkillsSection';
+import ArticleSection from '@/components/ArticleSection';
 import ContactSection from '@/components/ContactSection';
 import '../assets/sass/pages-common-style.scss';
 
@@ -25,6 +26,7 @@ export default function Home() {
             <HeroSection />
             <SkillsSection />
             <ProjectSection />
+            <ArticleSection />
             <ContactSection />
           </>
         ) : (
