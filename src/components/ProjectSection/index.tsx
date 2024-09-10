@@ -7,7 +7,6 @@ import { useQuery } from '@tanstack/react-query';
 import { fetchProjects } from '@/services';
 import '../../assets/sass/sections-common-style.scss';
 import '../../assets/sass/dynamic-section.scss';
-import './ProjectCard.scss';
 
 export default function ProjectSection() {
   const { data: projects = [] } = useQuery<Project[]>({

@@ -1,3 +1,4 @@
+import './ProjectCard.scss';
 import { Project } from '@/types';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';

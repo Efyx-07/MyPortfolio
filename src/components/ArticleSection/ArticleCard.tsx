@@ -1,3 +1,4 @@
+import './ArticleCard.scss';
 import { Article } from '@/types/article.interface';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -11,7 +12,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
   const router = useRouter();
 
   return (
-    <div className="article-card">
+    <>
       <div className="image-container">
         <Image
           className="img"
@@ -22,11 +23,21 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           priority
         />
       </div>
-      <h1>{article.title}</h1>
-      <Button
-        name="Lire l'article"
-        onClick={() => router.push(`/article/${article.id}`)}
-      />
-    </div>
+      <div className="article-description">
+        <div className="text-container">
+          <p className="title">{article.title}</p>
+          <div
+            className="body-snippet"
+            dangerouslySetInnerHTML={{
+              __html: article.body.slice(0, 100) + ' ...',
+            }}
+          />
+        </div>
+        <Button
+          name="Lire la suite"
+          onClick={() => router.push(`/article/${article.id}`)}
+        />
+      </div>
+    </>
   );
 }

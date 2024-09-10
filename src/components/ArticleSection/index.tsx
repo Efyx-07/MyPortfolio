@@ -27,7 +27,7 @@ export default function ArticleSection() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="project-card"
+              className="article-card"
             >
               <ArticleCard key={article.id} article={article} />
             </motion.div>
