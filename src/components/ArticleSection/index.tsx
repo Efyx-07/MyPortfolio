@@ -8,18 +8,26 @@ import { fetchArticles } from '@/services';
 import '../../assets/sass/sections-common-style.scss';
 import '../../assets/sass/dynamic-section.scss';
 
+// Function to return a new array of reversed articles
+const reverseArticles = (articles: readonly Article[]) => {
+  return [...articles].reverse();
+};
+
 export default function ArticleSection() {
   const { data: articles = [] } = useQuery<Article[]>({
     queryKey: ['articles'],
     queryFn: fetchArticles,
   });
 
+  // Reverse the articles array and only take the 3 last ones
+  const reversedArticles: Article[] = reverseArticles(articles).slice(0, 3);
+
   return (
     <section className="article-section dynamic-section">
       <div className="content">
         <SectionTitle title="Mes derniers articles" />
         <div className="dynamic-cards-container">
-          {articles.map((article, index) => (
+          {reversedArticles.map((article, index) => (
             <motion.div
               key={article.id}
               custom={index}
