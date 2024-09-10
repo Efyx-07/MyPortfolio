@@ -3,6 +3,7 @@ import { Article } from '@/types/article.interface';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import Button from '../Reusables/Button';
+import { useState } from 'react';
 
 interface ArticleCardProps {
   article: Article;
@@ -10,6 +11,12 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ article }: ArticleCardProps) {
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const navToArticlePage = (): void => {
+    setIsLoading(true);
+    router.push(`/article/${article.id}`);
+  };
 
   return (
     <>
@@ -33,10 +40,11 @@ export default function ArticleCard({ article }: ArticleCardProps) {
             }}
           />
         </div>
-        <Button
-          name="Lire la suite"
-          onClick={() => router.push(`/article/${article.id}`)}
-        />
+        {isLoading ? (
+          <Button name="Chargement..." className="loading-button" />
+        ) : (
+          <Button name="Lire la suite" onClick={navToArticlePage} />
+        )}
       </div>
     </>
   );

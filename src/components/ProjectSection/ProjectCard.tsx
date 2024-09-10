@@ -1,10 +1,9 @@
 import './ProjectCard.scss';
 import { Project } from '@/types';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Button from '../Reusables/Button';
-
-import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
