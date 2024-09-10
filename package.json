@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.51.23",
     "@tanstack/react-query-devtools": "^5.55.4",
+    "date-fns": "^3.6.0",
     "framer-motion": "^11.2.12",
     "next": "14.2.3",
     "react": "^18",
