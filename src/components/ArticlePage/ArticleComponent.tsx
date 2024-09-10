@@ -28,11 +28,10 @@ export default function ArticleComponent({
             />
           </div>
           <div className="text-container">
-            <div className="article-head">
-              <p>{formatDate(creationDate as Date)}</p>
-            </div>
             <h1 className="article-title">{selectedArticle.title}</h1>
+            <p className="article-date">{formatDate(creationDate as Date)}</p>
             <div
+              className="article-body"
               dangerouslySetInnerHTML={{
                 __html: selectedArticle.body,
               }}

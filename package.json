@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint:scss": "stylelint '**/*.scss'",
+    "format:scss": "prettier --write '**/*.scss'"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.23",
