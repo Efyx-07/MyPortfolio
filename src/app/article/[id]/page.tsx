@@ -1,5 +1,7 @@
 import { Article } from '@/types/article.interface';
 import { fetchArticleById } from '@/services/blogArticles.service';
+import ArticleComponent from '@/components/ArticlePage/ArticleComponent';
+import '../../../assets/sass/pages-common-style.scss';
 
 interface ArticlePageProps {
   params: { id: string };
@@ -14,7 +16,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       {selectedArticle ? (
         <div className="page">
           <div className="content">
-            <h1>{selectedArticle.title}</h1>
+            <ArticleComponent selectedArticle={selectedArticle} />
           </div>
         </div>
       ) : (
