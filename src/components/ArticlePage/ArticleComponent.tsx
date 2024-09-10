@@ -24,12 +24,14 @@ export default function ArticleComponent({
               priority
             />
           </div>
-          <h1>{selectedArticle.title}</h1>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: selectedArticle.body,
-            }}
-          />
+          <div className="text-container">
+            <h1 className="article-title">{selectedArticle.title}</h1>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: selectedArticle.body,
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>
