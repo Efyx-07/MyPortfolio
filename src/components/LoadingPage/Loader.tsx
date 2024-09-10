@@ -5,8 +5,8 @@ export default function Loader() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const duration = 500; 
-    const increment = 5; 
+    const duration = 500;
+    const increment = 5;
     const intervalTime = duration / 20;
 
     const interval = setInterval(() => {
@@ -33,5 +33,4 @@ export default function Loader() {
       </div>
     </div>
   );
-};
-
+}

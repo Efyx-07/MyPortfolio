@@ -2,49 +2,47 @@
 @import '../../assets/sass/breakpoints.scss';
 
 .project-navigator {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .projectItems-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: solid 1px $whiteBorder;
+  border-radius: 0.5rem;
+
+  .projectItem-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    border: solid 1px $whiteBorder;
-    border-radius: .5rem;
 
-    .projectItem-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-        .project-item {
-            font-size: .75rem;
-            color: $accent2;
-        }
-
-        .project-title {
-            font-size: 1.2rem;
-            cursor: pointer;
-
-            &:hover {
-                color: $accent2;
-            }
-        }
+    .project-item {
+      font-size: 0.75rem;
+      color: $accent2;
     }
 
-    .prev {
-        align-items: start;
-    }
+    .project-title {
+      font-size: 1.2rem;
+      cursor: pointer;
 
-    .next {
-        align-items: end;
+      &:hover {
+        color: $accent2;
+      }
     }
+  }
+
+  .prev {
+    align-items: start;
+  }
+
+  .next {
+    align-items: end;
+  }
 }
 
 @media (min-width: $sm) {
-
-    .projectItems-container {
-        flex-direction: row;
-    }
+  .projectItems-container {
+    flex-direction: row;
+  }
 }
-

@@ -1,24 +1,24 @@
 @import '../../assets/sass/colors.scss';
 
 .project-section {
-    .content .projectCards-container {
-        display: flex;
-        align-items: center;
-        gap: 2.5rem;
-        overflow-x: auto;
-        overflow-y: hidden;
-        padding-bottom: 1rem;
-    }
+  .content .projectCards-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+  }
 }
 
 .projectCards-container::-webkit-scrollbar {
-    height: .5rem;              
-} 
+  height: 0.5rem;
+}
 .projectCards-container::-webkit-scrollbar-track {
-    background: transparent;              
-} 
+  background: transparent;
+}
 .projectCards-container::-webkit-scrollbar-thumb {
-    background: rgba($accent1, .25);
-    border-radius: 1rem;
-    border: none;
+  background: rgba($accent1, 0.25);
+  border-radius: 1rem;
+  border: none;
 }

@@ -1,107 +1,107 @@
 {
-    "skills": [
-        { 
-          "title": "Langage: TypeScript",
-          "icon": "clarity:talk-bubbles-line",
-          "stacks": [
-            {
-              "name": "Typescript",
-              "icon": "akar-icons:typescript-fill"
-            }
-          ],
-          "text": "Pour assurer la cohérence des données et la maintenabilité du code tout au long du développement."
-        },
-        
-        { 
-          "title": "Frontend: React ou VueJs",
-          "icon": "gg:terminal",
-          "stacks": [
-            {
-              "name": "React",
-              "icon": "akar-icons:react-fill"
-            },
-            {
-              "name": "NextJs",
-              "icon": "teenyicons:nextjs-outline"
-            },
-            {
-              "name": "VueJs",
-              "icon": "carbon:logo-vue"
-            }
-          ],
-          "text": "React/NextJs ou VueJs pour des applications et sites web modernes et réactifs."
-        },
-
-        { 
-          "title": "UI Design: Sass, Figma",
-          "icon": "hugeicons:paint-board",
-          "stacks": [
-            {
-              "name": "Sass",
-              "icon": "fa6-brands:sass"
-            },
-            {
-              "name": "Figma",
-              "icon": "solar:figma-broken"
-            }
-          ],
-          "text": "Sass pour un design soigné et responsive. Figma pour le maquettage des interfaces."
-        },
-
-        { 
-          "title": "Backend: NodeJs",
-          "icon": "ph:database",
-          "stacks": [
-            {
-              "name": "NodeJs",
-              "icon": "fa6-brands:node-js"
-            },
-            {
-              "name": "NestJs",
-              "icon": "simple-icons:nestjs"
-            },
-            {
-              "name": "ExpressJs",
-              "icon": "simple-icons:express"
-            }
-          ],
-          "text": "Je peux intervenir sur des projets fullstack avec la mise en place d'un backend en Express ou NestJs."
-        },
-
-        { 
-          "title": "Database: MySQL",
-          "icon": "ph:cloud",
-          "stacks": [
-            {
-              "name": "MySQL",
-              "icon": "fontisto:mysql"
-            }
-          ],
-          "text": "Je suis en mesure de concevoir une base de données relationnelle avec MySQL."
-        },
-
-        { 
-          "title": "Tools",
-          "icon": "et:tools-2",
-          "stacks": [
-            {
-              "name": "Github",
-              "icon": "teenyicons:github-outline"
-            },
-            {
-              "name": "Vercel",
-              "icon": "akar-icons:vercel-fill"
-            },
-            {
-              "name": "Jest",
-              "icon": "simple-icons:jest"
-            },
-            {
-              "name": "Wordpress",
-              "icon": "ic:baseline-wordpress"
-            }
-          ],
-          "text": "Git/Github pour le versionning, Vercel pour le déploiement, Jest pour les tests unitaires et le CMS Wordpress."
+  "skills": [
+    {
+      "title": "Langage: TypeScript",
+      "icon": "clarity:talk-bubbles-line",
+      "stacks": [
+        {
+          "name": "Typescript",
+          "icon": "akar-icons:typescript-fill"
         }
-      ]
+      ],
+      "text": "Pour assurer la cohérence des données et la maintenabilité du code tout au long du développement."
+    },
+
+    {
+      "title": "Frontend: React ou VueJs",
+      "icon": "gg:terminal",
+      "stacks": [
+        {
+          "name": "React",
+          "icon": "akar-icons:react-fill"
+        },
+        {
+          "name": "NextJs",
+          "icon": "teenyicons:nextjs-outline"
+        },
+        {
+          "name": "VueJs",
+          "icon": "carbon:logo-vue"
+        }
+      ],
+      "text": "React/NextJs ou VueJs pour des applications et sites web modernes et réactifs."
+    },
+
+    {
+      "title": "UI Design: Sass, Figma",
+      "icon": "hugeicons:paint-board",
+      "stacks": [
+        {
+          "name": "Sass",
+          "icon": "fa6-brands:sass"
+        },
+        {
+          "name": "Figma",
+          "icon": "solar:figma-broken"
+        }
+      ],
+      "text": "Sass pour un design soigné et responsive. Figma pour le maquettage des interfaces."
+    },
+
+    {
+      "title": "Backend: NodeJs",
+      "icon": "ph:database",
+      "stacks": [
+        {
+          "name": "NodeJs",
+          "icon": "fa6-brands:node-js"
+        },
+        {
+          "name": "NestJs",
+          "icon": "simple-icons:nestjs"
+        },
+        {
+          "name": "ExpressJs",
+          "icon": "simple-icons:express"
+        }
+      ],
+      "text": "Je peux intervenir sur des projets fullstack avec la mise en place d'un backend en Express ou NestJs."
+    },
+
+    {
+      "title": "Database: MySQL",
+      "icon": "ph:cloud",
+      "stacks": [
+        {
+          "name": "MySQL",
+          "icon": "fontisto:mysql"
+        }
+      ],
+      "text": "Je suis en mesure de concevoir une base de données relationnelle avec MySQL."
+    },
+
+    {
+      "title": "Tools",
+      "icon": "et:tools-2",
+      "stacks": [
+        {
+          "name": "Github",
+          "icon": "teenyicons:github-outline"
+        },
+        {
+          "name": "Vercel",
+          "icon": "akar-icons:vercel-fill"
+        },
+        {
+          "name": "Jest",
+          "icon": "simple-icons:jest"
+        },
+        {
+          "name": "Wordpress",
+          "icon": "ic:baseline-wordpress"
+        }
+      ],
+      "text": "Git/Github pour le versionning, Vercel pour le déploiement, Jest pour les tests unitaires et le CMS Wordpress."
+    }
+  ]
 }

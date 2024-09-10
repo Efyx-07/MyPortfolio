@@ -1,28 +1,27 @@
 {
-    "contacts": [
+  "contacts": [
+    {
+      "name": "Linkedin",
+      "icon": "ph:linkedin-logo-light",
+      "link": "https://www.linkedin.com/in/francois-xavier-savary/",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
 
-        {
-            "name": "Linkedin",
-            "icon": "ph:linkedin-logo-light",
-            "link": "https://www.linkedin.com/in/francois-xavier-savary/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-        },
+    {
+      "name": "Github",
+      "icon": "mingcute:github-line",
+      "link": "https://github.com/Efyx-07",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
 
-        {
-            "name": "Github",
-            "icon": "mingcute:github-line",
-            "link": "https://github.com/Efyx-07",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-        },
-
-        {
-            "name": "Me contacter",
-            "icon": "octicon:mail-24",
-            "link": "mailto:fx.savary@orange.fr",
-            "target": null,
-            "rel": null
-        }
-    ]
+    {
+      "name": "Me contacter",
+      "icon": "octicon:mail-24",
+      "link": "mailto:fx.savary@orange.fr",
+      "target": null,
+      "rel": null
+    }
+  ]
 }

@@ -1,11 +1,11 @@
 export default interface Skill {
-    title: string;
-    icon: string;
-    stacks: Stack[];
-    text: string;
+  title: string;
+  icon: string;
+  stacks: Stack[];
+  text: string;
 }
 
 interface Stack {
-    name: string;
-    icon: string;
+  name: string;
+  icon: string;
 }

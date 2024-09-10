@@ -1,17 +1,17 @@
 @import '../../assets/sass/colors.scss';
 
 footer {
-    height: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: solid 1px $whiteBorder;
-    position: relative;
-    z-index: 1;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px $whiteBorder;
+  position: relative;
+  z-index: 1;
 
-    p {
-        font-size: .8rem;
-        font-weight: 300;
-        opacity: .75;
-    }
+  p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    opacity: 0.75;
+  }
 }

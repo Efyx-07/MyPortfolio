@@ -1,310 +1,309 @@
 {
-    "projects": [
-    
+  "projects": [
+    {
+      "id": "1",
+      "title": "VibrLink",
+      "slug": "VibrLink_fanlink_generator",
+      "date": "avr. 2024 - en cours",
+      "description": "SaaS de génération de fanlinks pour la promotion de sorties musicales. Basée sur l'API Spotify et réalisée en NextJs.",
+      "presentation": "VibrLink est un SaaS de génération de fanlinks pour sorties musicales, outil promotionnel indispensable pour les artistes. Basé sur l’API Spotify, j’ai développé cette application selon 3 axes principaux : L'usage intuitif (car destinée à des utilisateurs non techniques),  l’UI design de la landing-page générée et l’optimisation SEO des landing page qui seront partagées sur les réseaux sociaux.",
+      "image": {
+        "source": "VibrLink/pr3_imPres.png",
+        "alt": "VibrLink"
+      },
+      "devType": "Fullstack",
+      "stacks": [
+        { "name": "TypeScript" },
+        { "name": "NextJs" },
+        { "name": "Sass" },
+        { "name": "NodeJS" },
+        { "name": "MySQL" }
+      ],
+      "themes": [
+        { "name": "TypeScript" },
+        { "name": "NextJs / Zustand" },
+        { "name": "Sass" },
+        { "name": "NodeJs / Express" },
+        { "name": "MySQL" }
+      ],
+      "buttons": [
         {
-            "id": "1",
-            "title": "VibrLink",
-            "slug": "VibrLink_fanlink_generator",
-            "date": "avr. 2024 - en cours",
-            "description": "SaaS de génération de fanlinks pour la promotion de sorties musicales. Basée sur l'API Spotify et réalisée en NextJs.",
-            "presentation": "VibrLink est un SaaS de génération de fanlinks pour sorties musicales, outil promotionnel indispensable pour les artistes. Basé sur l’API Spotify, j’ai développé cette application selon 3 axes principaux : L'usage intuitif (car destinée à des utilisateurs non techniques),  l’UI design de la landing-page générée et l’optimisation SEO des landing page qui seront partagées sur les réseaux sociaux.",
-            "image": {
-                "source": "VibrLink/pr3_imPres.png",
-                "alt": "VibrLink"
-            },
-            "devType": "Fullstack",
-            "stacks": [
-                {"name": "TypeScript"},
-                {"name": "NextJs"},
-                {"name": "Sass"},
-                {"name": "NodeJS"},
-                {"name": "MySQL"}
-            ],
-            "themes": [
-                {"name": "TypeScript"},
-                {"name": "NextJs / Zustand"},
-                {"name": "Sass"},
-                {"name": "NodeJs / Express"},
-                {"name": "MySQL"}
-            ],
-            "buttons": [
-                {
-                    "name": "Demo",
-                    "icon":"octicon:link-external-24",
-                    "link":"https://vibrlink-next-test.vercel.app/"
-                },
-                {
-                    "name": "Code",
-                    "icon":"mingcute:github-line",
-                    "link":"https://github.com/Efyx-07/Vibrlink_nextjs-zustand-sass"
-                }
-            ],
-            "views": [
-                {
-                    "id": "1",
-                    "source": "VibrLink/pr3_view1.png",
-                    "legend": {
-                        "title": "VibrLink - Fanlink generator",
-                        "text":"SaaS dédié à la promotion de sorties musicales."
-                    }
-                },
-                {
-                    "id": "2",
-                    "source": "VibrLink/pr3_view2.png",
-                    "legend": {
-                        "title": "Implémentation des API",
-                        "text":"Le développement de l'application nécessitait une maîtrise de l'API Spotify. Celle-ci interagit avec les API de Deezer et YouTube pour créer automatiquement des liens vers ces deux plateformes. Pour les autres plateformes, les liens sont générés manuellement."
-                    }
-                },
-                {
-                    "id": "3",
-                    "source": "VibrLink/pr3_view3.png",
-                    "legend": {
-                        "title": "Point d'entrée",
-                        "text":"Création du fanlink basée sur l'Api Spotify. Fonctionne avec le lien Spotify de la sortie selectionnée."
-                    }
-                },
-                {
-                    "id": "4",
-                    "source": "VibrLink/pr3_view4.png",
-                    "legend": {
-                        "title": "Liste des fanlinks créés",
-                        "text":"Liste des fanlinks de l'utilisateur connecté avec les fonctionnalités utilitaires (mise à jour, suppression, accés à la landing page et copie dans le clip-board)."
-                    }
-                },
-                {
-                    "id": "5",
-                    "source": "VibrLink/pr3_view5.png",
-                    "legend": {
-                        "title": "Gestion des liens",
-                        "text":"Edition des liens du fanlink. A partir de l'URL Spotify, auto-synchronisation des liens Deezer et YouTube(grâce à leurs Api respectives). Ajout manuel de liens vers d'autres plateformes. Visibilité des liens pilotée par un switch."
-                    }
-                },
-                {
-                    "id": "6",
-                    "source": "VibrLink/pr3_view6.png",
-                    "legend": {
-                        "title": "Landing page",
-                        "text":"Le design de la landing page, qui sera partagée sur les réseaux sociaux, est crucial pour l'utilisateur final. J'ai donc créé un design moderne et épuré, adaptable à une grande variété d'artworks. De plus, j'ai développé des versions spécifiques pour les formats desktop et mobile."
-                    }
-                },
-                {
-                    "id": "7",
-                    "source": "VibrLink/pr3_view7.png",
-                    "legend": {
-                        "title": "Optimisation SEO avec NextJs",
-                        "text":"J'ai choisi de développer cette application avec NextJS. Ce framework permet un rendu SSR de la landing page, facilitant l'optimisation du SEO. Les métabalises dynamiques sont parfaitement reconnues par les bots de Facebook et Twitter (X)"
-                    }
-                }
-            ]
+          "name": "Demo",
+          "icon": "octicon:link-external-24",
+          "link": "https://vibrlink-next-test.vercel.app/"
         },
-
         {
-            "id": "2",
-            "title": "OxyEvents Manager",
-            "slug": "OxyEvents_Manager",
-            "date": "oct. 2023 - déc. 2023",
-            "description": "Développement d'un outil de création et gestion d'évènements privés pour l'agence de relations presse Oxygen.",
-            "presentation": "Dans le cadre d'une mission pour l'agence de relations presse Oxygen, j'ai créé cet outil interne en collaboration avec son pôle évenementiel. Réalisé de la maquette au développement final, celui-ci a été développé avec une base de données relationnelle en MySQL, un backend en NodeJs/Express et un frontend en Vue 3/Typescript avec design en Sass.",
-            "image": {
-                "source": "EventsManager/pr1_imPres.png",
-                "alt": "EventsManager"
-            },
-            "devType": "fullstack",
-            "stacks": [
-                {"name": "TypeScript"},
-                {"name": "Vue3"},
-                {"name": "Sass"},
-                {"name": "NodeJS"},
-                {"name": "MySQL"}
-            ],
-            "themes": [
-                {"name": "TypeScript"},
-                {"name": "Vue 3 / Pinia"},
-                {"name": "Sass"},
-                {"name": "NodeJs / Express"},
-                {"name": "MySQL"}
-            ],
-            "buttons": [
-                {
-                    "name": "Demo",
-                    "icon":"octicon:link-external-24",
-                    "link":"https://oxy-events-manager.vercel.app/"
-                },
-                {
-                    "name": "Code",
-                    "icon":"mingcute:github-line",
-                    "link":"https://github.com/Efyx-07/OxyEvents-Manager"
-                }
-            ],
-            "views": [
-                {
-                    "id": "1",
-                    "source": "EventsManager/pr1_view1.png",
-                    "legend": {
-                        "title": "OxyEvents Manager",
-                        "text":"Application de création et de gestion d'évènements privés."
-                    }
-                },
-                {
-                    "id": "2",
-                    "source": "EventsManager/pr1_view2.png",
-                    "legend": {
-                        "title": "Connexion",
-                        "text":"Connexion sécurisée au dashboard avec identifiant et mot de passe. Option mot de passe oublié: envoi d'un lien de réinitialisation par mail avec Nodemailer. Plusieurs niveaux d'administrateurs: SUPERADMIN, ADMIN, GUEST et GENERIC."
-                    }
-                },
-                {
-                    "id": "3",
-                    "source": "EventsManager/pr1_view3.png",
-                    "legend": {
-                        "title": "Créer un évènement",
-                        "text":"Création d'évènements via un formulaire dédié et selon un template pré-défini (carte-évènement, sections, lieu lié à l'API Google Maps)."
-                    }
-                },
-                {
-                    "id": "4",
-                    "source": "EventsManager/pr1_view4.png",
-                    "legend": {
-                        "title": "Gestion des évènements",
-                        "text":"Liste des évènements créés, filtrable par date ou par mot-clé. Accès aux différentes actions: mettre à jour ou supprimer un évènement, accéder à la page évènement, liste des participants."
-                    }
-                },
-                {
-                    "id": "5",
-                    "source": "EventsManager/pr1_view5.png",
-                    "legend": {
-                        "title": "Mettre à jour un évènement",
-                        "text":"Mise à jour des informations de l'évènement via un formulaire dédié prérempli avec les données renseignées à l'origine."
-                    }
-                },
-                {
-                    "id": "6",
-                    "source": "EventsManager/pr1_view6.png",
-                    "legend": {
-                        "title": "Landing page",
-                        "text":"Landing page de l'évènement à envoyer aux invités. Son URL unique (id complexe avec UUID) permet d'en limiter l'accès aux invités selectionnés."
-                    }
-                },
-                {
-                    "id": "7",
-                    "source": "EventsManager/pr1_view7.png",
-                    "legend": {
-                        "title": "Participation à l'évènement",
-                        "text":"Formulaire de confirmation de participation à l'évènement à remplir par l'invité."
-                    }
-                },
-                {
-                    "id": "8",
-                    "source": "EventsManager/pr1_view8.png",
-                    "legend": {
-                        "title": "Récupération de la liste d'invités",
-                        "text":"Liste des participants à un évènement avec leurs informations, mise à jour de manière réactive dans le dashboard. Export possible au format Excel (avec Excel.js)."
-                    }
-                },
-                {
-                    "id": "9",
-                    "source": "EventsManager/pr1_view9.png",
-                    "legend": {
-                        "title": "Management des admins",
-                        "text":"Invitation nouvel admin par mail (avec Nodemailer et page de création de compte protégée par un token), modification mot de passe et suppression ancien administrateur."
-                    }
-                },
-                {
-                    "id": "10",
-                    "source": "EventsManager/pr1_view10.png",
-                    "legend": {
-                        "title": "Design responsive",
-                        "text":"Design en Sass entièrement responsive. Application accessible sur tous les supports."
-                    }
-                }
-            ]
-        },
-
-        {
-            "id": "3",
-            "title": "AmpliFury MusicStore",
-            "slug": "AmpliFury_music_store",
-            "date": "juillet 2023 - août 2023",
-            "description": "Développement de l'interface d'un site e-commerce d'instruments de musique, créatif et basé sur la réactivité de Vue3.",
-            "presentation": "AmpliFury MusicStore est un site e-commerce spécialisé dans la vente d'instruments de musique, construit avec Vue3 et Sass pour le frontend, NodeJs/Express pour le backend et base de données en MySQL. Il offre une navigation simple d'utilisation et profite pleinement de la réactivité du framework Vue3.",
-            "image": {
-                "source": "AmpliFury/pr2_imPres.png",
-                "alt": "AmpliFury"
-            },
-            "devType": "frontend",
-            "stacks": [
-                {"name": "TypeScript"},
-                {"name": "Vue3"},
-                {"name": "Sass"}
-            ],
-            "themes": [
-                {"name": "TypeScript"},
-                {"name": "Vue 3 / Pinia"},
-                {"name": "Sass"}
-            ],
-            "buttons": [
-                {
-                    "name": "Demo",
-                    "icon":"octicon:link-external-24",
-                    "link":"https://amplifury-music-store.vercel.app/"
-                },
-                {
-                    "name": "Code",
-                    "icon":"mingcute:github-line",
-                    "link":"https://github.com/Efyx-07/AmpliFury-Music-Store"
-                }
-            ],
-            "views": [
-                {
-                    "id": "1",
-                    "source": "AmpliFury/pr2_view1.png",
-                    "legend": {
-                        "title": "AmpliFury MusicStore",
-                        "text":"Interface d'un site e-commerce basé sur la réctivité d'une single-page-application."
-                    }
-                },
-                {
-                    "id": "2",
-                    "source": "AmpliFury/pr2_view2.png",
-                    "legend": {
-                        "title": "Navigation",
-                        "text":"Exploration des produits selon les catégories."
-                    }
-                },
-                {
-                    "id": "3",
-                    "source": "AmpliFury/pr2_view3.png",
-                    "legend": {
-                        "title": "Filtrage des produits",
-                        "text":"Catalogue de produits filtrable selon le prix (ascendants, descendants) et l'ordre alphabétique (ascendant, descendant)."
-                    }
-                },
-                {
-                    "id": "4",
-                    "source": "AmpliFury/pr2_view4.png",
-                    "legend": {
-                        "title": "Réactivité avec Pinia 1",
-                        "text":"Ajout des produits à la liste de souhaits. Affichage en temps réel grâce au state Pinia."
-                    }
-                },
-                {
-                    "id": "5",
-                    "source": "AmpliFury/pr2_view5.png",
-                    "legend": {
-                        "title": "Réactivité avec Pinia 2",
-                        "text":"Ajout des produits au panier d'achat. Affichage en temps réel grâce au state Pinia."
-                    }
-                },
-                {
-                    "id": "6",
-                    "source": "AmpliFury/pr2_view6.png",
-                    "legend": {
-                        "title": "Page produit",
-                        "text":"Consultation des détails de chaque produit individuellement."
-                    }
-                }
-            ]
+          "name": "Code",
+          "icon": "mingcute:github-line",
+          "link": "https://github.com/Efyx-07/Vibrlink_nextjs-zustand-sass"
         }
-    ]
+      ],
+      "views": [
+        {
+          "id": "1",
+          "source": "VibrLink/pr3_view1.png",
+          "legend": {
+            "title": "VibrLink - Fanlink generator",
+            "text": "SaaS dédié à la promotion de sorties musicales."
+          }
+        },
+        {
+          "id": "2",
+          "source": "VibrLink/pr3_view2.png",
+          "legend": {
+            "title": "Implémentation des API",
+            "text": "Le développement de l'application nécessitait une maîtrise de l'API Spotify. Celle-ci interagit avec les API de Deezer et YouTube pour créer automatiquement des liens vers ces deux plateformes. Pour les autres plateformes, les liens sont générés manuellement."
+          }
+        },
+        {
+          "id": "3",
+          "source": "VibrLink/pr3_view3.png",
+          "legend": {
+            "title": "Point d'entrée",
+            "text": "Création du fanlink basée sur l'Api Spotify. Fonctionne avec le lien Spotify de la sortie selectionnée."
+          }
+        },
+        {
+          "id": "4",
+          "source": "VibrLink/pr3_view4.png",
+          "legend": {
+            "title": "Liste des fanlinks créés",
+            "text": "Liste des fanlinks de l'utilisateur connecté avec les fonctionnalités utilitaires (mise à jour, suppression, accés à la landing page et copie dans le clip-board)."
+          }
+        },
+        {
+          "id": "5",
+          "source": "VibrLink/pr3_view5.png",
+          "legend": {
+            "title": "Gestion des liens",
+            "text": "Edition des liens du fanlink. A partir de l'URL Spotify, auto-synchronisation des liens Deezer et YouTube(grâce à leurs Api respectives). Ajout manuel de liens vers d'autres plateformes. Visibilité des liens pilotée par un switch."
+          }
+        },
+        {
+          "id": "6",
+          "source": "VibrLink/pr3_view6.png",
+          "legend": {
+            "title": "Landing page",
+            "text": "Le design de la landing page, qui sera partagée sur les réseaux sociaux, est crucial pour l'utilisateur final. J'ai donc créé un design moderne et épuré, adaptable à une grande variété d'artworks. De plus, j'ai développé des versions spécifiques pour les formats desktop et mobile."
+          }
+        },
+        {
+          "id": "7",
+          "source": "VibrLink/pr3_view7.png",
+          "legend": {
+            "title": "Optimisation SEO avec NextJs",
+            "text": "J'ai choisi de développer cette application avec NextJS. Ce framework permet un rendu SSR de la landing page, facilitant l'optimisation du SEO. Les métabalises dynamiques sont parfaitement reconnues par les bots de Facebook et Twitter (X)"
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "title": "OxyEvents Manager",
+      "slug": "OxyEvents_Manager",
+      "date": "oct. 2023 - déc. 2023",
+      "description": "Développement d'un outil de création et gestion d'évènements privés pour l'agence de relations presse Oxygen.",
+      "presentation": "Dans le cadre d'une mission pour l'agence de relations presse Oxygen, j'ai créé cet outil interne en collaboration avec son pôle évenementiel. Réalisé de la maquette au développement final, celui-ci a été développé avec une base de données relationnelle en MySQL, un backend en NodeJs/Express et un frontend en Vue 3/Typescript avec design en Sass.",
+      "image": {
+        "source": "EventsManager/pr1_imPres.png",
+        "alt": "EventsManager"
+      },
+      "devType": "fullstack",
+      "stacks": [
+        { "name": "TypeScript" },
+        { "name": "Vue3" },
+        { "name": "Sass" },
+        { "name": "NodeJS" },
+        { "name": "MySQL" }
+      ],
+      "themes": [
+        { "name": "TypeScript" },
+        { "name": "Vue 3 / Pinia" },
+        { "name": "Sass" },
+        { "name": "NodeJs / Express" },
+        { "name": "MySQL" }
+      ],
+      "buttons": [
+        {
+          "name": "Demo",
+          "icon": "octicon:link-external-24",
+          "link": "https://oxy-events-manager.vercel.app/"
+        },
+        {
+          "name": "Code",
+          "icon": "mingcute:github-line",
+          "link": "https://github.com/Efyx-07/OxyEvents-Manager"
+        }
+      ],
+      "views": [
+        {
+          "id": "1",
+          "source": "EventsManager/pr1_view1.png",
+          "legend": {
+            "title": "OxyEvents Manager",
+            "text": "Application de création et de gestion d'évènements privés."
+          }
+        },
+        {
+          "id": "2",
+          "source": "EventsManager/pr1_view2.png",
+          "legend": {
+            "title": "Connexion",
+            "text": "Connexion sécurisée au dashboard avec identifiant et mot de passe. Option mot de passe oublié: envoi d'un lien de réinitialisation par mail avec Nodemailer. Plusieurs niveaux d'administrateurs: SUPERADMIN, ADMIN, GUEST et GENERIC."
+          }
+        },
+        {
+          "id": "3",
+          "source": "EventsManager/pr1_view3.png",
+          "legend": {
+            "title": "Créer un évènement",
+            "text": "Création d'évènements via un formulaire dédié et selon un template pré-défini (carte-évènement, sections, lieu lié à l'API Google Maps)."
+          }
+        },
+        {
+          "id": "4",
+          "source": "EventsManager/pr1_view4.png",
+          "legend": {
+            "title": "Gestion des évènements",
+            "text": "Liste des évènements créés, filtrable par date ou par mot-clé. Accès aux différentes actions: mettre à jour ou supprimer un évènement, accéder à la page évènement, liste des participants."
+          }
+        },
+        {
+          "id": "5",
+          "source": "EventsManager/pr1_view5.png",
+          "legend": {
+            "title": "Mettre à jour un évènement",
+            "text": "Mise à jour des informations de l'évènement via un formulaire dédié prérempli avec les données renseignées à l'origine."
+          }
+        },
+        {
+          "id": "6",
+          "source": "EventsManager/pr1_view6.png",
+          "legend": {
+            "title": "Landing page",
+            "text": "Landing page de l'évènement à envoyer aux invités. Son URL unique (id complexe avec UUID) permet d'en limiter l'accès aux invités selectionnés."
+          }
+        },
+        {
+          "id": "7",
+          "source": "EventsManager/pr1_view7.png",
+          "legend": {
+            "title": "Participation à l'évènement",
+            "text": "Formulaire de confirmation de participation à l'évènement à remplir par l'invité."
+          }
+        },
+        {
+          "id": "8",
+          "source": "EventsManager/pr1_view8.png",
+          "legend": {
+            "title": "Récupération de la liste d'invités",
+            "text": "Liste des participants à un évènement avec leurs informations, mise à jour de manière réactive dans le dashboard. Export possible au format Excel (avec Excel.js)."
+          }
+        },
+        {
+          "id": "9",
+          "source": "EventsManager/pr1_view9.png",
+          "legend": {
+            "title": "Management des admins",
+            "text": "Invitation nouvel admin par mail (avec Nodemailer et page de création de compte protégée par un token), modification mot de passe et suppression ancien administrateur."
+          }
+        },
+        {
+          "id": "10",
+          "source": "EventsManager/pr1_view10.png",
+          "legend": {
+            "title": "Design responsive",
+            "text": "Design en Sass entièrement responsive. Application accessible sur tous les supports."
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "3",
+      "title": "AmpliFury MusicStore",
+      "slug": "AmpliFury_music_store",
+      "date": "juillet 2023 - août 2023",
+      "description": "Développement de l'interface d'un site e-commerce d'instruments de musique, créatif et basé sur la réactivité de Vue3.",
+      "presentation": "AmpliFury MusicStore est un site e-commerce spécialisé dans la vente d'instruments de musique, construit avec Vue3 et Sass pour le frontend, NodeJs/Express pour le backend et base de données en MySQL. Il offre une navigation simple d'utilisation et profite pleinement de la réactivité du framework Vue3.",
+      "image": {
+        "source": "AmpliFury/pr2_imPres.png",
+        "alt": "AmpliFury"
+      },
+      "devType": "frontend",
+      "stacks": [
+        { "name": "TypeScript" },
+        { "name": "Vue3" },
+        { "name": "Sass" }
+      ],
+      "themes": [
+        { "name": "TypeScript" },
+        { "name": "Vue 3 / Pinia" },
+        { "name": "Sass" }
+      ],
+      "buttons": [
+        {
+          "name": "Demo",
+          "icon": "octicon:link-external-24",
+          "link": "https://amplifury-music-store.vercel.app/"
+        },
+        {
+          "name": "Code",
+          "icon": "mingcute:github-line",
+          "link": "https://github.com/Efyx-07/AmpliFury-Music-Store"
+        }
+      ],
+      "views": [
+        {
+          "id": "1",
+          "source": "AmpliFury/pr2_view1.png",
+          "legend": {
+            "title": "AmpliFury MusicStore",
+            "text": "Interface d'un site e-commerce basé sur la réctivité d'une single-page-application."
+          }
+        },
+        {
+          "id": "2",
+          "source": "AmpliFury/pr2_view2.png",
+          "legend": {
+            "title": "Navigation",
+            "text": "Exploration des produits selon les catégories."
+          }
+        },
+        {
+          "id": "3",
+          "source": "AmpliFury/pr2_view3.png",
+          "legend": {
+            "title": "Filtrage des produits",
+            "text": "Catalogue de produits filtrable selon le prix (ascendants, descendants) et l'ordre alphabétique (ascendant, descendant)."
+          }
+        },
+        {
+          "id": "4",
+          "source": "AmpliFury/pr2_view4.png",
+          "legend": {
+            "title": "Réactivité avec Pinia 1",
+            "text": "Ajout des produits à la liste de souhaits. Affichage en temps réel grâce au state Pinia."
+          }
+        },
+        {
+          "id": "5",
+          "source": "AmpliFury/pr2_view5.png",
+          "legend": {
+            "title": "Réactivité avec Pinia 2",
+            "text": "Ajout des produits au panier d'achat. Affichage en temps réel grâce au state Pinia."
+          }
+        },
+        {
+          "id": "6",
+          "source": "AmpliFury/pr2_view6.png",
+          "legend": {
+            "title": "Page produit",
+            "text": "Consultation des détails de chaque produit individuellement."
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -1,112 +1,104 @@
 @import '../../assets/sass/colors.scss';
 @import '../../assets/sass/breakpoints.scss';
 
-.hero-text{
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    text-align: center;
+    gap: 1rem;
 
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        h1 {
-            font-size: clamp(3.5rem, 20vw, 7rem);
-            line-height: .8;
-
-            span {
-                background: linear-gradient(to right, $accent1, $accent2);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color:transparent;
-            }
-        }
-
-        .presentation 
-        .presentation-text {
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
-
-        .hello {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: .5rem;
-            width: 14rem;
-            border: solid 1px $whiteBorder;
-            border-radius: 3rem;
-            padding: .5rem;
-
-            .icon {
-                font-size: 1.25rem;
-            }
-
-            p {
-                font-size: 1.1rem;
-            }
-        }
+    p {
+      font-size: 1.2rem;
     }
 
-    .buttons-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 1rem;
+    h1 {
+      font-size: clamp(3.5rem, 20vw, 7rem);
+      line-height: 0.8;
 
-        .button {
-            width: 100%;
-            height: 3.25rem;
-        }
-
-        .cta-button {
-            background: $white;
-            color: $accent1;
-        }
+      span {
+        background: linear-gradient(to right, $accent1, $accent2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
     }
+
+    .presentation .presentation-text {
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+
+    .hello {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 14rem;
+      border: solid 1px $whiteBorder;
+      border-radius: 3rem;
+      padding: 0.5rem;
+
+      .icon {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    .button {
+      width: 100%;
+      height: 3.25rem;
+    }
+
+    .cta-button {
+      background: $white;
+      color: $accent1;
+    }
+  }
 }
 
 @media (min-width: $sm) {
+  .hero-text .buttons-container {
+    width: unset;
+    flex-direction: row;
 
-    .hero-text 
-    .buttons-container {
-        width: unset;
-        flex-direction: row;
-
-        .button {
-            width: 12rem;
-        }
+    .button {
+      width: 12rem;
     }
+  }
 }
 
 @media (min-width: $lg) {
+  .hero-text {
+    align-items: unset;
 
-    .hero-text {
-        align-items: unset;
-
-        .text-container {
-            align-items: unset;
-            text-align: unset;
-        }
-    } 
+    .text-container {
+      align-items: unset;
+      text-align: unset;
+    }
+  }
 }
 
 @media (min-width: $xxl) {
-
-    .hero-text 
-    .text-container 
-    .presentation 
-    .presentation-text {
-        font-size: 1.2rem;
-        font-weight: 300;
-    }
+  .hero-text .text-container .presentation .presentation-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
 }
