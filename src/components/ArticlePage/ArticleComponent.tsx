@@ -1,6 +1,6 @@
 import { Article } from '@/types/article.interface';
 import Image from 'next/image';
-import { format } from 'date-fns';
+import formatDate from '@/utils/formatDate';
 import './ArticleComponent.scss';
 import '../../assets/sass/sections-common-style.scss';
 
@@ -12,11 +12,6 @@ export default function ArticleComponent({
   selectedArticle,
 }: ArticleComponentProps) {
   const creationDate: Article['creationDate'] = selectedArticle.creationDate;
-
-  // format the date in YYYY-MM-DD
-  const formatDate = (date: Date): string => {
-    return format(date, 'yyyy-MM-dd');
-  };
 
   return (
     <section className="article-component-section">
@@ -34,7 +29,7 @@ export default function ArticleComponent({
           </div>
           <div className="text-container">
             <div className="article-head">
-              <p>le {formatDate(creationDate as Date)}</p>
+              <p>{formatDate(creationDate as Date)}</p>
             </div>
             <h1 className="article-title">{selectedArticle.title}</h1>
             <div
