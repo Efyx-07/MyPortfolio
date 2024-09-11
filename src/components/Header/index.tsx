@@ -70,7 +70,7 @@ export default function Header() {
           />
         </div>
       </motion.header>
-      <BurgerMenu isOpen={isOpen} />
+      <BurgerMenu isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
     </>
   );
 }
