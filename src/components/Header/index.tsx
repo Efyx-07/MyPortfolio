@@ -7,6 +7,7 @@ import { fetchContacts } from '@/services';
 import { motion } from 'framer-motion';
 import Button from '../Reusables/Button';
 import SiteName from './SiteName';
+import Navigation from './Navigation';
 import MobileMenuIcon from './MobileMenuIcon';
 import BurgerMenu from './BurgerMenu';
 import './Header.scss';
@@ -48,21 +49,24 @@ export default function Header() {
       >
         <div className="content">
           <SiteName />
-          <div className="button-container">
-            {contacts.map(
-              (contact, index) =>
-                index === 2 && (
-                  <Button
-                    key={contact.name}
-                    name={contact.name}
-                    icon={contact.icon}
-                    link={contact.link}
-                    target=""
-                    rel=""
-                    className="button"
-                  />
-                ),
-            )}
+          <div className="navigation-container">
+            <Navigation />
+            <div className="button-container">
+              {contacts.map(
+                (contact, index) =>
+                  index === 2 && (
+                    <Button
+                      key={contact.name}
+                      name={contact.name}
+                      icon={contact.icon}
+                      link={contact.link}
+                      target=""
+                      rel=""
+                      className="button"
+                    />
+                  ),
+              )}
+            </div>
           </div>
           <MobileMenuIcon
             isOpen={isOpen}

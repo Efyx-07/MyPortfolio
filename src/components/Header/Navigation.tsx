@@ -1,7 +1,8 @@
 import { useRouter } from 'next/navigation';
+import './Navigation.scss';
 
 interface NavigationProps {
-  toggleMenu: () => void;
+  toggleMenu?: () => void;
 }
 
 export default function Navigation({ toggleMenu }: NavigationProps) {
@@ -16,13 +17,15 @@ export default function Navigation({ toggleMenu }: NavigationProps) {
     {
       name: 'Portfolio',
       onClick: () => {
-        router.push('/blog'), toggleMenu();
+        router.push('/blog');
+        if (toggleMenu) toggleMenu();
       },
     },
     {
       name: 'Blog',
       onClick: () => {
-        router.push('/blog'), toggleMenu();
+        router.push('/blog');
+        if (toggleMenu) toggleMenu();
       },
     },
   ];
