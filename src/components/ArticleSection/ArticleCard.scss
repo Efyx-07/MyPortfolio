@@ -1,16 +1,19 @@
 @import '../../assets/sass/colors.scss';
 @import '../../assets/sass/breakpoints.scss';
 
-.article-card {
+.article-card-wrapper, .article-card {
   width: 100%;
-  background: $blackRelief;
-  border: solid 1px $whiteBorder;
-  border-radius: 0.5rem;
   flex: 0 0 100%;
+
+  .article-card {
+    background: $blackRelief;
+    border: solid 1px $whiteBorder;
+    border-radius: 0.5rem;
+  }
 
   .image-container {
     width: 100%;
-    min-height: 15rem;
+    min-height: 16rem;
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -58,7 +61,12 @@
 }
 
 @media (min-width: $s) {
+
   .article-card {
+    max-width: 100% 
+  }
+
+  .article-card-wrapper {
     max-width: 27rem;
   }
 }

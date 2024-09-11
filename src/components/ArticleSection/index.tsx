@@ -31,7 +31,7 @@ export default function ArticleSection() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="article-card"
+              className="article-card-wrapper"
             >
               <ArticleCard key={article.id} article={article} />
             </motion.div>

@@ -19,7 +19,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
   };
 
   return (
-    <>
+    <div className="article-card">
       <div className="image-container">
         <Image
           className="img"
@@ -46,6 +46,6 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           <Button name="Lire la suite" onClick={navToArticlePage} />
         )}
       </div>
-    </>
+    </div>
   );
 }
