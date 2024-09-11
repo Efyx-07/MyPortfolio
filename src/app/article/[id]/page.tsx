@@ -1,6 +1,7 @@
 import { Article } from '@/types/article.interface';
 import { fetchArticleById } from '@/services/blogArticles.service';
 import ArticleComponent from '@/components/ArticlePage/ArticleComponent';
+import NotFound from '@/components/Reusables/NotFound';
 import '../../../assets/sass/pages-common-style.scss';
 
 interface ArticlePageProps {
@@ -20,7 +21,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </div>
         </div>
       ) : (
-        <p>Article not found</p>
+        <NotFound mention="Aucun article trouvé..." />
       )}
     </>
   );
