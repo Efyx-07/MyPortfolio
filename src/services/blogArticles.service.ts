@@ -1,4 +1,5 @@
 import { Article } from '@/types/article.interface';
+import { unstable_noStore as noStore } from 'next/cache';
 
 const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
@@ -21,6 +22,7 @@ export async function fetchArticles(): Promise<Article[]> {
 // Récupère un article par son ID, retourne l'article en réponse
 // ===========================================================================================
 export async function fetchArticleById(id: Article['id']): Promise<Article> {
+  noStore();
   try {
     const response = await fetch(`${backendUrl}/articles/${id}`);
     if (!response.ok) {
