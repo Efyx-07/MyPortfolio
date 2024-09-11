@@ -23,7 +23,7 @@ header {
     align-items: center;
 
     .navigation-container {
-      display: none
+      display: none;
     }
   }
 }
@@ -40,11 +40,11 @@ header {
       .button-container {
         display: block;
         width: 12rem;
-  
+
         .button {
           background: transparent;
           border: solid 2px $accent1;
-  
+
           &:hover {
             background: $white;
             border-color: transparent;
