@@ -3,5 +3,31 @@
 
 nav {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
+
+    .nav-item {
+        font-size: 1.25rem;
+        color: $white;
+
+        &:hover {
+            color: $accent2;
+            cursor: pointer;
+        }
+
+        &.active {
+            color: $accent2;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    nav {
+        flex-direction: row;
+
+        .nav-item {
+            font-size: 1rem;
+        }
+    }
 }

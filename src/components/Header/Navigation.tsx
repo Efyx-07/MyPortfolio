@@ -1,4 +1,4 @@
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import './Navigation.scss';
 
 interface NavigationProps {
@@ -7,22 +7,18 @@ interface NavigationProps {
 
 export default function Navigation({ toggleMenu }: NavigationProps) {
   const router = useRouter();
+  const pathName = usePathname();
 
   interface Navitem {
     name: string;
+    pathName: string;
     onClick: () => void;
   }
 
   const navItems: Navitem[] = [
     {
-      name: 'Portfolio',
-      onClick: () => {
-        router.push('/blog');
-        if (toggleMenu) toggleMenu();
-      },
-    },
-    {
       name: 'Blog',
+      pathName: '/blog',
       onClick: () => {
         router.push('/blog');
         if (toggleMenu) toggleMenu();
@@ -32,7 +28,11 @@ export default function Navigation({ toggleMenu }: NavigationProps) {
   return (
     <nav>
       {navItems.map((navItem) => (
-        <p className="navItem" key={navItem.name} onClick={navItem.onClick}>
+        <p
+          className={`nav-item ${pathName === navItem.pathName ? 'active' : ''}`}
+          key={navItem.name}
+          onClick={navItem.onClick}
+        >
           {navItem.name}
         </p>
       ))}
