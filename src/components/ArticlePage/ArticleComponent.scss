@@ -2,7 +2,7 @@
 @import '../../assets/sass/breakpoints.scss';
 
 .article-component-section {
-  padding-top: 0;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,6 @@
   width: 100%;
   max-width: 50rem;
   align-self: center;
-  background: $white;
   color: $black;
   border: solid 1px $whiteBorder;
   border-radius: 0.5rem;
