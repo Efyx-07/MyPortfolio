@@ -1,0 +1,10 @@
+@import '../../assets/sass/colors.scss';
+@import '../../assets/sass/breakpoints.scss';
+
+.burger-menu-modal {
+    position: fixed;
+    top: 6rem;
+    height: calc(100dvh - 6rem);
+    width: 100%;
+    background: red;
+}
