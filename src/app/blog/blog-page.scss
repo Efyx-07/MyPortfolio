@@ -1,7 +1,24 @@
-.page .content section {
-  .article-cards-container {
+@import '../../assets/sass/breakpoints.scss';
+
+.page .content section .article-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+@media (min-width: $lg) {
+
+  .page .content section .article-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $xxl) {
+
+  .page .content section .article-cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
   }
 }
