@@ -1,5 +1,9 @@
 @import '../../assets/sass/breakpoints.scss';
 
+.mobile-menu-icon {
+  font-size: 1.5rem;
+}
+
 @media (min-width: $lg) {
   .mobile-menu-icon {
     display: none;
