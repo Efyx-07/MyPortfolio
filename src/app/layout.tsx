@@ -3,7 +3,6 @@ import { Poppins } from 'next/font/google';
 import Providers from './providers';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import BurgerMenu from '@/components/BurgerMenu';
 import '../assets/sass/global.scss';
 
 export const metadata: Metadata = {
@@ -48,7 +47,6 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <BurgerMenu />
         </Providers>
       </body>
     </html>

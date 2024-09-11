@@ -7,6 +7,8 @@ import { fetchContacts } from '@/services';
 import { motion } from 'framer-motion';
 import Button from '../Reusables/Button';
 import SiteName from './SiteName';
+import MobileMenuIcon from './MobileMenuIcon';
+import BurgerMenu from '../BurgerMenu';
 import './Header.scss';
 
 export default function Header() {
@@ -15,6 +17,9 @@ export default function Header() {
     queryFn: fetchContacts,
   });
 
+  // Manage the state of the burger menu and the mobile icon
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  // Manage scroll animations
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -34,31 +39,38 @@ export default function Header() {
   }, []);
 
   return (
-    <motion.header
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={scrolled ? 'scrolled' : ''}
-    >
-      <div className="content">
-        <SiteName />
-        <div className="button-container">
-          {contacts.map(
-            (contact, index) =>
-              index === 2 && (
-                <Button
-                  key={contact.name}
-                  name={contact.name}
-                  icon={contact.icon}
-                  link={contact.link}
-                  target=""
-                  rel=""
-                  className="button"
-                />
-              ),
-          )}
+    <>
+      <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        className={scrolled ? 'scrolled' : ''}
+      >
+        <div className="content">
+          <SiteName />
+          <div className="button-container">
+            {contacts.map(
+              (contact, index) =>
+                index === 2 && (
+                  <Button
+                    key={contact.name}
+                    name={contact.name}
+                    icon={contact.icon}
+                    link={contact.link}
+                    target=""
+                    rel=""
+                    className="button"
+                  />
+                ),
+            )}
+          </div>
+          <MobileMenuIcon
+            isOpen={isOpen}
+            toggleMenu={() => setIsOpen(!isOpen)}
+          />
         </div>
-      </div>
-    </motion.header>
+      </motion.header>
+      <BurgerMenu isOpen={isOpen} />
+    </>
   );
 }
