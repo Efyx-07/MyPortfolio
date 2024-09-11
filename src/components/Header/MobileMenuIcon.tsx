@@ -1,4 +1,4 @@
-import { h1 } from 'framer-motion/client';
+import './MobileMenuIcon.scss';
 
 interface MobileMenuIconProps {
   isOpen: boolean;

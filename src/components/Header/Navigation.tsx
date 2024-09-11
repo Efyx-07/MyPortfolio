@@ -14,6 +14,12 @@ export default function Navigation({ toggleMenu }: NavigationProps) {
 
   const navItems: Navitem[] = [
     {
+      name: 'Portfolio',
+      onClick: () => {
+        router.push('/blog'), toggleMenu();
+      },
+    },
+    {
       name: 'Blog',
       onClick: () => {
         router.push('/blog'), toggleMenu();
