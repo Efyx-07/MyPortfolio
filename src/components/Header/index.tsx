@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import Button from '../Reusables/Button';
 import SiteName from './SiteName';
 import MobileMenuIcon from './MobileMenuIcon';
-import BurgerMenu from '../BurgerMenu';
+import BurgerMenu from './BurgerMenu';
 import './Header.scss';
 
 export default function Header() {
