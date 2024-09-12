@@ -48,7 +48,7 @@ export default function Header() {
         className={scrolled ? 'scrolled' : ''}
       >
         <div className="content">
-          <SiteName />
+          <SiteName toggleMenu={() => setIsOpen(!isOpen)} />
           <div className="navigation-container">
             <Navigation />
             <div className="button-container">

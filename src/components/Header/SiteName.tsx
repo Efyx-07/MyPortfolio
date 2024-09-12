@@ -2,11 +2,23 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import './SiteName.scss';
 
-export default function SiteName() {
+interface SiteNameProps {
+  toggleMenu: () => void;
+}
+
+export default function SiteName({ toggleMenu }: SiteNameProps) {
   const router = useRouter();
 
+  const navToHomePageAndCloseMenu = (): void => {
+    router.push('/');
+    toggleMenu();
+  };
+
   return (
-    <div className="siteName-logo-container" onClick={() => router.push('/')}>
+    <div
+      className="siteName-logo-container"
+      onClick={navToHomePageAndCloseMenu}
+    >
       <div className="logo-container">
         <Image
           className="logo"
