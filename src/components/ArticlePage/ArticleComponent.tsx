@@ -13,6 +13,14 @@ export default function ArticleComponent({
 }: ArticleComponentProps) {
   const creationDate: Article['creationDate'] = selectedArticle.creationDate;
 
+  const keywords: string[] = [
+    'nestjs',
+    'expressjs',
+    'backenddevelopment',
+    'framework',
+    'typescript',
+  ];
+
   return (
     <section className="article-component-section">
       <div className="content">
@@ -29,6 +37,13 @@ export default function ArticleComponent({
           </div>
           <div className="text-container">
             <div className="article-header">
+              <div className="keywords-container">
+                {keywords.map((keyword, index) => (
+                  <p key={index} className="keyword">
+                    #{keyword}
+                  </p>
+                ))}
+              </div>
               <h2 className="article-title">{selectedArticle.title}</h2>
               <p className="article-date">{formatDate(creationDate as Date)}</p>
             </div>
