@@ -1,7 +1,8 @@
 @import '../../assets/sass/colors.scss';
 @import '../../assets/sass/breakpoints.scss';
 
-.article-card-wrapper, .article-card {
+.article-card-wrapper,
+.article-card {
   width: 100%;
   flex: 0 0 100%;
 
@@ -61,9 +62,8 @@
 }
 
 @media (min-width: $s) {
-
   .article-card {
-    max-width: 100% 
+    max-width: 100%;
   }
 
   .article-card-wrapper {
