@@ -2,6 +2,7 @@ export default interface Project {
   id: string;
   title: string;
   slug: string;
+  year: string;
   date: string;
   description: string;
   presentation: string;

@@ -64,7 +64,12 @@
       .title {
         font-size: 1.5rem;
         font-weight: 600;
-        white-space: nowrap;
+
+        .year {
+          font-size: 0.9rem;
+          font-weight: 200;
+          opacity: 0.75;
+        }
       }
 
       .description {

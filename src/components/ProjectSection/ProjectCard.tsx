@@ -1,23 +1,12 @@
 import { Project } from '@/types';
-//import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Button from '../Reusables/Button';
-
-//import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  //const router = useRouter();
-  /*const [isLoading, setIsLoading] = useState(false);
-
-  const navToProjectPage = (): void => {
-    setIsLoading(true);
-    router.push(`/project/${project.slug}`);
-  };*/
-
   return (
     <>
       <div className="image-container">
@@ -39,7 +28,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </p>
             ))}
           </div>
-          <p className="title">{project.title}</p>
+          <p className="title">
+            {project.title} <span className="year">({project.year})</span>
+          </p>
           <p className="description">{project.description}</p>
         </div>
         <div className="project-card-buttons-container">
