@@ -74,9 +74,20 @@
       }
     }
 
-    .loading-button {
-      background: $white;
-      color: $accent1;
+    .project-card-buttons-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1rem;
+
+      .button {
+        width: 100%;
+      }
+
+      .cta-button {
+        background: $white;
+        color: $accent1;
+      }
     }
   }
 }
@@ -84,5 +95,14 @@
 @media (min-width: $s) {
   .project-card {
     max-width: 27rem;
+
+    .project-description .project-card-buttons-container {
+      flex-direction: row;
+
+      .button {
+        width: 100%;
+        min-width: 12rem;
+      }
+    }
   }
 }

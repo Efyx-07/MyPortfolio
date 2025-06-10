@@ -1,22 +1,22 @@
 import { Project } from '@/types';
-import { useRouter } from 'next/navigation';
+//import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Button from '../Reusables/Button';
 
-import { useState } from 'react';
+//import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+  //const router = useRouter();
+  /*const [isLoading, setIsLoading] = useState(false);
 
   const navToProjectPage = (): void => {
     setIsLoading(true);
     router.push(`/project/${project.slug}`);
-  };
+  };*/
 
   return (
     <>
@@ -42,11 +42,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <p className="title">{project.title}</p>
           <p className="description">{project.description}</p>
         </div>
-        {isLoading ? (
-          <Button name="Chargement..." className="loading-button" />
-        ) : (
-          <Button name="En savoir +" onClick={navToProjectPage} />
-        )}
+        <div className="project-card-buttons-container">
+          {project.buttons.map((button) => (
+            <Button
+              key={button.name}
+              className={
+                button.name === 'Code' ? 'button' : 'cta-button button'
+              }
+              isDisabled={button.link === ''}
+              name={button.name}
+              link={button.link}
+              icon={button.icon}
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+          ))}
+        </div>
       </div>
     </>
   );

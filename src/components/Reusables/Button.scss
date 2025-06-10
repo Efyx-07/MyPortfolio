@@ -24,6 +24,14 @@ button {
     background: $white;
     color: $accent1;
   }
+
+  &.disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      animation: none;
+    }
+  }
 }
 
 // animation au hover

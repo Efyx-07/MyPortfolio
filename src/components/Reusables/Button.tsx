@@ -11,6 +11,7 @@ interface ButtonProps {
   rel?: string | null;
   className?: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  isDisabled?: boolean;
 }
 
 export default function Button({
@@ -21,10 +22,15 @@ export default function Button({
   rel,
   className,
   onClick,
+  isDisabled,
 }: ButtonProps) {
   return (
     <a href={link} target={target ?? ''} rel={rel ?? ''}>
-      <button className={className} onClick={onClick}>
+      <button
+        className={`${className ?? ''} ${isDisabled ? 'disabled' : ''}`}
+        onClick={onClick}
+        disabled={isDisabled}
+      >
         <p className="button-name">{name}</p>
         <Icon icon={icon ?? ''} />
       </button>
