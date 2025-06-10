@@ -29,13 +29,17 @@
               "icon": "carbon:logo-vue"
             }
           ],
-          "text": "React/NextJs ou VueJs pour des applications et sites web modernes et réactifs."
+          "text": "Spécialisé en React/NextJs, je conçois des interfaces modernes et réactives. Je peux également travailler en VueJs."
         },
 
         { 
-          "title": "UI Design: Sass, Figma",
+          "title": "UI Design: Tailwind, Sass, Figma",
           "icon": "hugeicons:paint-board",
           "stacks": [
+            {
+              "name": "Tailwind",
+              "icon": "flowbite:tailwind-solid"
+            },
             {
               "name": "Sass",
               "icon": "fa6-brands:sass"
@@ -45,11 +49,11 @@
               "icon": "solar:figma-broken"
             }
           ],
-          "text": "Sass pour un design soigné et responsive. Figma pour le maquettage des interfaces."
+          "text": "Tailwind ou Sass pour un design soigné et responsive. Figma pour le maquettage des interfaces."
         },
 
         { 
-          "title": "Backend: NodeJs",
+          "title": "Backend: NodeJs / NestJS",
           "icon": "ph:database",
           "stacks": [
             {
@@ -69,15 +73,19 @@
         },
 
         { 
-          "title": "Database: MySQL",
+          "title": "Database: MySQL ou PostgreSQL",
           "icon": "ph:cloud",
           "stacks": [
             {
               "name": "MySQL",
               "icon": "fontisto:mysql"
+            },
+            {
+              "name": "PostgreSQL",
+              "icon": "simple-icons:postgresql"
             }
           ],
-          "text": "Je suis en mesure de concevoir une base de données relationnelle avec MySQL."
+          "text": "Je suis en mesure de concevoir une base de données relationnelle avec MySQL ou PostgreSQL."
         },
 
         { 
