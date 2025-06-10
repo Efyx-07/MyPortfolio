@@ -43,10 +43,6 @@ export default function HeroText() {
             Passionné par l’UI et l’expérience utilisateur, je développe des
             applications et sites web réactifs au design soigné. Je peux aussi
             intervenir sur des projets fullstack.
-            <br></br>
-            <span className="presentation-added-mention">
-              Actuellement en CDI chez Groupe NAT.
-            </span>
           </p>
         </motion.div>
         <Separator />

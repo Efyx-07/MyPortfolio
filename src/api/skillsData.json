@@ -73,7 +73,7 @@
     },
 
     {
-      "title": "Database: MySQL ou PostgreSQL",
+      "title": "Database: MySQL, PostgreSQL",
       "icon": "ph:cloud",
       "stacks": [
         {
