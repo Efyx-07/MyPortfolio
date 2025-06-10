@@ -2,40 +2,40 @@
 @import '../../assets/sass/breakpoints.scss';
 
 .hero-image {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 100%;
+
+  .image-container {
+    display: inline-block;
     width: 100%;
-    border-radius: 100%;
+    max-width: 20rem;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: inherit;
 
-    .image-container {
-        display: inline-block;
-        width: 100%;
-        max-width: 20rem;
-        height: auto;
-        position: relative;
-        overflow: hidden;
-        border-radius: inherit;
-
-        .img {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: inherit;
-            object-fit: cover;
-        }
+    .img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: inherit;
+      object-fit: cover;
     }
+  }
 }
 
 @media (min-width: $lg) {
-    .hero-image .image-container {
-        max-width: 24rem;
-        max-height: 24rem;
-    }
+  .hero-image .image-container {
+    max-width: 24rem;
+    max-height: 24rem;
+  }
 }
 
 @media (min-width: $xxl) {
-    .hero-image .image-container {
-        max-width: 28rem;
-        max-height: 28rem;
-    }
+  .hero-image .image-container {
+    max-width: 28rem;
+    max-height: 28rem;
+  }
 }

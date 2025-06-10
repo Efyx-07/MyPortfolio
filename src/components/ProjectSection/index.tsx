@@ -1,41 +1,40 @@
-import { motion } from "framer-motion";
-import { cardVariants } from "@/framer-motion/cardVariants";
-import { Project } from "@/types";
-import ProjectCard from "./ProjectCard";
-import SectionTitle from "../Reusables/SectionTitle";
+import { motion } from 'framer-motion';
+import { cardVariants } from '@/framer-motion/cardVariants';
+import { Project } from '@/types';
+import ProjectCard from './ProjectCard';
+import SectionTitle from '../Reusables/SectionTitle';
 import { useQuery } from '@tanstack/react-query';
-import { fetchProjects } from "@/services";
+import { fetchProjects } from '@/services';
 import '../../assets/sass/sections-common-style.scss';
 import './ProjectSection.scss';
 import './ProjectCard.scss';
 
 export default function ProjectSection() {
+  const { data: projects = [] } = useQuery<Project[]>({
+    queryKey: ['projects'],
+    queryFn: fetchProjects,
+  });
 
-    const { data: projects = [] } = useQuery<Project[]>({
-        queryKey: ['projects'],
-        queryFn: fetchProjects
-    });
-
-    return (
-        <section className="project-section">
-            <div className="content">
-                <SectionTitle title="Mes projets récents" />
-                <div className="projectCards-container">
-                    {projects.map((project, index) => (
-                        <motion.div
-                            key={project.id}
-                            custom={index}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={cardVariants}
-                            className="project-card"
-                        >
-                            <ProjectCard key={project.id} project={project} />
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className="project-section">
+      <div className="content">
+        <SectionTitle title="Mes projets récents" />
+        <div className="projectCards-container">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={cardVariants}
+              className="project-card"
+            >
+              <ProjectCard key={project.id} project={project} />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

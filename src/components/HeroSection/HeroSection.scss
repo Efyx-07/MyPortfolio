@@ -2,19 +2,18 @@
 @import '../../assets/sass/breakpoints.scss';
 
 .hero-section {
-    display: flex;
-    align-items: center;
-    background: $customLinearGradient;
-    border-radius: 0 0 2rem 2rem;
-    margin-bottom: 1rem;
-    margin-top: -6rem;
-    padding-top: 6rem;
-    min-height: 90dvh;
+  display: flex;
+  align-items: center;
+  background: $customLinearGradient;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 1rem;
+  margin-top: -6rem;
+  padding-top: 6rem;
+  min-height: 90dvh;
 }
 
 @media (min-width: $lg) {
-
-    .hero-section {
-        border-radius: 0 0 4rem 4rem;
-    }
+  .hero-section {
+    border-radius: 0 0 4rem 4rem;
+  }
 }

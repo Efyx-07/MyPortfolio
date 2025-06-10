@@ -6,14 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ./src",
+    "lint:debug": "eslint ./src --debug",
+    "lint:fix": "eslint ./src --fix",
+    "format": "prettier --write .",
+    "format:css": "prettier --write **/*.css"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.51.23",
     "framer-motion": "^11.2.12",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "save": "^2.9.0"
   },
   "devDependencies": {
     "@iconify/react": "^4.1.1",
@@ -21,8 +26,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "^15.3.2",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
     "sass": "^1.77.2",
     "typescript": "^5"
   }
